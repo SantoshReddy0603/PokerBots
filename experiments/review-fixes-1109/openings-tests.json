@@ -1,0 +1,30 @@
+[
+  {
+    "test": "protocol",
+    "exit": 0
+  },
+  {
+    "test": "selection",
+    "exit": 0
+  },
+  {
+    "test": "evaluator",
+    "exit": 0
+  },
+  {
+    "test": "learning",
+    "exit": 0
+  },
+  {
+    "test": "review_decisions",
+    "exit": 0
+  },
+  {
+    "test": "review_ranges",
+    "exit": 0
+  },
+  {
+    "test": "review_lock",
+    "exit": 0
+  }
+]

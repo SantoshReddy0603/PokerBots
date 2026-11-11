@@ -1,0 +1,26 @@
+{
+  "seeds": [
+    "review-pilot-731"
+  ],
+  "candidate": "checkpoints/review-calls.py",
+  "candidate_sha256": "670384291a7578a13291fc1680272cb0bcbc39c7b729225a596917e6f1cc3bb7",
+  "opponents": {
+    "opponents/league/development/polar.py": "d1443d32ed02d8f5a57a319ba8e031d6fc3c04882adfea999f1cf6dbdf5a09d2",
+    "opponents/league/development/jam.py": "a8cb5e4b8e52f8431e549455c505164ea54bc4ab33885bc9553dd07eb403dfab"
+  },
+  "python": "3.11.9 (main, Nov  4 2026, 00:53:34) [GCC 11.4.0]",
+  "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "jobs": 2,
+  "revision": "070c0726f34b6380435baf08afc509b7edcfdeb3",
+  "clock": "production-time-adaptive",
+  "policy_rng": "embedded in hashed bot sources",
+  "harness": {
+    "tools/benchmark.py": "b241e5c433d113b7f839227b928e4e8e570b46f7147cdcf7f01e58780f8b3ecd",
+    "tools/evaluate.py": "4e815309cd8f4a18392534ad384a0f3c606192e530805bdcda69293c4f36d9b1",
+    "tools/matrix.py": "5bd6bc9dd902c61964717efd1e815943b55331e7e76a3fced08ec0c60f9a8de2",
+    "vendor/Starter_Kit/engine.py": "e41da96ae56a682e02d88f8b384a4cc7e19a9b9f6d2916462478fa8e92fee119"
+  },
+  "manifest": "experiments/review-seeds.json",
+  "manifest_sha256": "f66403d67a000817163c0c69d83314c0b890d9d3159d199f49685242b38e6682",
+  "split": "pilot"
+}

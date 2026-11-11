@@ -1,0 +1,18 @@
+1 experiments/friend-review/pokerbots-discard-holdem-main/bot.py paired points/capped/raw [0.5, 0.5012, 0.5231]
+1 opponents/league/development-v2/trap.py paired points/capped/raw [0, 0.0, 0.0444]
+1 match points 0.25 seed blocks 2 95% bootstrap [0, 0.5]
+1 capped chips/hand 0.2506 seed blocks 2 95% bootstrap [0.0, 0.5012]
+1 raw chips/hand 0.2838 seed blocks 2 95% bootstrap [-0.0488, 0.6162]
+1 candidate W/D/L [8, 0, 0] max bank 19.762 failures/notices/stderr 0 0 0
+1 reference W/D/L [6, 0, 2] max bank 16.646 failures/notices/stderr 0 0 0
+1 points without experiments/friend-review/pokerbots-discard-holdem-main/bot.py 0
+1 points without opponents/league/development-v2/trap.py 0.5
+2 experiments/friend-review/pokerbots-discard-holdem-main/bot.py paired points/capped/raw [0.25, 0.2517, 0.326]
+2 opponents/league/development-v2/trap.py paired points/capped/raw [0, 0.0, 0.019]
+2 match points 0.125 seed blocks 2 95% bootstrap [0, 0.25]
+2 capped chips/hand 0.1259 seed blocks 2 95% bootstrap [0.0, 0.2517]
+2 raw chips/hand 0.1725 seed blocks 2 95% bootstrap [0.051, 0.294]
+2 candidate W/D/L [8, 0, 0] max bank 36.523 failures/notices/stderr 0 0 0
+2 reference W/D/L [7, 0, 1] max bank 46.616 failures/notices/stderr 0 0 0
+2 points without experiments/friend-review/pokerbots-discard-holdem-main/bot.py 0
+2 points without opponents/league/development-v2/trap.py 0.25

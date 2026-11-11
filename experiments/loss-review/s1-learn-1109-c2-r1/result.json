@@ -1,0 +1,35 @@
+{
+  "stage": 1,
+  "wall_s": 35.139318176,
+  "seed": "learn-1109-c2",
+  "played": 400,
+  "net": 565,
+  "delta": 400,
+  "points": 1,
+  "forfeits": {},
+  "bots": [
+    {
+      "path": "experiments/friend-review/pokerbots-discard-holdem-main/bot.py",
+      "sha256": "0016b0f931f16c3cb414696cd90861d1c1673ef4dde66de4c02b33b071846886",
+      "notices": 0,
+      "bank_s": 17.832683079000052,
+      "startup_to_first_reply_ms": 360.7541360000006,
+      "diagnostics": 0,
+      "p99_ms": 52.99970299999757,
+      "max_ms": 57.95989899999654
+    },
+    {
+      "path": "experiments/loss-review/s1-learn-1109-c2-r1/trace_bot.py",
+      "sha256": "66905e8578cf2929807955f6d119e3c804b6611979580370f15eefa75549b59e",
+      "notices": 0,
+      "bank_s": 19.711780380000082,
+      "startup_to_first_reply_ms": 360.24577799999946,
+      "diagnostics": 0,
+      "p99_ms": 56.34937700000009,
+      "max_ms": 164.7006260000019
+    }
+  ],
+  "reverse": true,
+  "original_net": -1,
+  "candidate_net": -565
+}

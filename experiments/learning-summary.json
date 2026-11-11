@@ -1,0 +1,72 @@
+{
+  "learning-v1-pilot": {
+    "matches": 4,
+    "wins": 0,
+    "draws": 0,
+    "losses": 4,
+    "candidate_sha256": "44c2dd805d196949e976436fe9585c82ac76bbb51ae1fea483baca17959c46cc"
+  },
+  "learning-v2-pilot": {
+    "matches": 4,
+    "wins": 0,
+    "draws": 0,
+    "losses": 4,
+    "candidate_sha256": "87fbed6219ba7b92ce60ec0261a10f8d7d1c968ff8c6ec241d239680397897e1"
+  },
+  "learning-v3-pilot": {
+    "matches": 4,
+    "wins": 4,
+    "draws": 0,
+    "losses": 0,
+    "candidate_sha256": "52cb48a4ad2c53bb98b86565b3fd7479c1905a6e031dd41d9b2a20790ccd92b4"
+  },
+  "learning-v4-screen": {
+    "matches": 56,
+    "wins": 53,
+    "draws": 0,
+    "losses": 3,
+    "candidate_sha256": "89ea1057374a2c8a3f5bee218d957f3719fc1334e9608106e34e4e9e81667544"
+  },
+  "learning-incumbent-screen": {
+    "matches": 56,
+    "wins": 44,
+    "draws": 0,
+    "losses": 12,
+    "candidate_sha256": "d679d00967b25c56db9c9b1889732823496f0cf017977f3d5e9fdfa4a0b73e3c"
+  },
+  "learning-v5-screen": {
+    "matches": 8,
+    "wins": 7,
+    "draws": 0,
+    "losses": 1,
+    "candidate_sha256": "5f6746cae189f2b94e16c06dae8834383179d12e92f0d139ed1c32edb1817a5e"
+  },
+  "learning-v5-field": {
+    "matches": 48,
+    "wins": 47,
+    "draws": 0,
+    "losses": 1,
+    "candidate_sha256": "5f6746cae189f2b94e16c06dae8834383179d12e92f0d139ed1c32edb1817a5e"
+  },
+  "learning-v5-confirmation": {
+    "matches": 16,
+    "wins": 11,
+    "draws": 0,
+    "losses": 5,
+    "candidate_sha256": "5f6746cae189f2b94e16c06dae8834383179d12e92f0d139ed1c32edb1817a5e"
+  },
+  "learning-incumbent-confirmation": {
+    "matches": 16,
+    "wins": 0,
+    "draws": 0,
+    "losses": 16,
+    "candidate_sha256": "d679d00967b25c56db9c9b1889732823496f0cf017977f3d5e9fdfa4a0b73e3c"
+  },
+  "learning-incumbent-confirmation-matched": {
+    "matches": 16,
+    "wins": 0,
+    "draws": 0,
+    "losses": 16,
+    "candidate_sha256": "d679d00967b25c56db9c9b1889732823496f0cf017977f3d5e9fdfa4a0b73e3c"
+  }
+}

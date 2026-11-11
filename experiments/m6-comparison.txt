@@ -1,0 +1,4 @@
+1 match points 0 seed blocks 2 95% bootstrap [0, 0]
+1 raw chips/hand -1.509 seed blocks 2 95% bootstrap [-1.9252500000000001, -1.0927499999999997]
+2 match points 0 seed blocks 2 95% bootstrap [0, 0]
+2 raw chips/hand -0.8017999999999998 seed blocks 2 95% bootstrap [-0.9557999999999998, -0.6477999999999999]

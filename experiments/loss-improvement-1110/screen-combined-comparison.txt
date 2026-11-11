@@ -1,0 +1,26 @@
+1 experiments/requested-field-test-1110/friend.py paired points/capped/raw [0.25, 0.7494, 2.2544]
+1 experiments/friend-review/pokerbots-discard-holdem-main/bot.py paired points/capped/raw [0.5, 0.9256, 3.0869]
+1 opponents/league/confirmation/trap.py paired points/capped/raw [0.5, 0.925, 2.2963]
+1 opponents/league/confirmation/tightjam.py paired points/capped/raw [0, 0.0563, 0.1525]
+1 match points 0.3125 seed blocks 2 95% bootstrap [0.125, 0.5]
+1 capped chips/hand 0.6641 seed blocks 2 95% bootstrap [0.3056, 1.0225]
+1 raw chips/hand 1.9475 seed blocks 2 95% bootstrap [1.5834, 2.3116]
+1 candidate W/D/L [13, 0, 3] max bank 23.956 failures/notices/stderr 0 0 0
+1 reference W/D/L [8, 0, 8] max bank 21.685 failures/notices/stderr 0 0 0
+1 points without experiments/requested-field-test-1110/friend.py 0.3333
+1 points without experiments/friend-review/pokerbots-discard-holdem-main/bot.py 0.25
+1 points without opponents/league/confirmation/trap.py 0.25
+1 points without opponents/league/confirmation/tightjam.py 0.4167
+2 experiments/requested-field-test-1110/friend.py paired points/capped/raw [0.25, 0.3455, 1.252]
+2 experiments/friend-review/pokerbots-discard-holdem-main/bot.py paired points/capped/raw [0.25, 0.56, 2.169]
+2 opponents/league/confirmation/trap.py paired points/capped/raw [0.5, 0.7395, 1.707]
+2 opponents/league/confirmation/tightjam.py paired points/capped/raw [0, 0.0, 0.126]
+2 match points 0.25 seed blocks 2 95% bootstrap [0, 0.5]
+2 capped chips/hand 0.4113 seed blocks 2 95% bootstrap [0.0854, 0.7371]
+2 raw chips/hand 1.3135 seed blocks 2 95% bootstrap [0.9799, 1.6471]
+2 candidate W/D/L [13, 0, 3] max bank 73.112 failures/notices/stderr 0 0 0
+2 reference W/D/L [9, 0, 7] max bank 66.773 failures/notices/stderr 0 0 0
+2 points without experiments/requested-field-test-1110/friend.py 0.25
+2 points without experiments/friend-review/pokerbots-discard-holdem-main/bot.py 0.25
+2 points without opponents/league/confirmation/trap.py 0.1667
+2 points without opponents/league/confirmation/tightjam.py 0.3333

@@ -1,0 +1,13 @@
+['tests/rules_update.py', 'checkpoints/rules-1110.py'] 0 4.08
+['tests/protocol.py', 'checkpoints/rules-1110.py'] 0 1.02
+['tests/selection.py', 'checkpoints/rules-1110.py'] 0 0.46
+['tests/evaluator.py', 'checkpoints/rules-1110.py'] 0 5.96
+['tests/learning.py', 'checkpoints/rules-1110.py'] 0 0.94
+['tests/review_decisions.py', 'checkpoints/rules-1110.py'] 0 2.37
+['tests/optimization.py', 'checkpoints/rules-1110.py'] 0 14.87
+['tests/optimization.py', 'checkpoints/rules-1110.py'] 0 15.25
+['tests/rules_matrix.py'] 0 0.18
+['tests/review_findings.py'] 0 0.46
+['tests/review_research.py'] 0 0.56
+['tests/review_control.py'] 0 1.24
+['-S', 'tests/protocol.py'] 0 0.94

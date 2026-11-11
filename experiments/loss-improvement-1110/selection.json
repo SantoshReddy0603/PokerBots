@@ -1,0 +1,12 @@
+{
+  "eligible": [
+    "selective",
+    "response",
+    "combined"
+  ],
+  "selected_for_confirmation": "selective",
+  "screen_wins": 29,
+  "baseline_screen_wins": 17,
+  "promotion": false,
+  "note": "Highest points under declared screen gates. No confirmation scores inspected."
+}

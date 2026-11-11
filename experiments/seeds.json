@@ -1,0 +1,24 @@
+{
+  "training": [
+    "train-0",
+    "train-1",
+    "train-2",
+    "train-3"
+  ],
+  "validation": [
+    "validation-0",
+    "validation-1",
+    "validation-2",
+    "validation-3"
+  ],
+  "final": [
+    "sealed-0",
+    "sealed-1",
+    "sealed-2",
+    "sealed-3"
+  ],
+  "smoke": [
+    "smoke-s1",
+    "smoke-s2"
+  ]
+}

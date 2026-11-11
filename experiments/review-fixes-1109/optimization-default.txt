@@ -1,0 +1,1 @@
+60 complete posterior equivalence cases passed {"3": {"previous": 29.245142750000053, "optimized": 24.933606899999994}, "4": {"previous": 24.59658170000001, "optimized": 21.305082249999963}, "5": {"previous": 37.93830954999997, "optimized": 23.70106545000006}}

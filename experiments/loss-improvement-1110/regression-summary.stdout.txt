@@ -1,0 +1,95 @@
+{
+  "baseline": {
+    "wdl": [
+      14,
+      8,
+      2
+    ],
+    "by_stage": {
+      "1": [
+        6,
+        4,
+        2
+      ],
+      "2": [
+        8,
+        4,
+        0
+      ]
+    },
+    "by_opponent": {
+      "opponents/league/confirmation/pressure.py": [
+        8,
+        0,
+        0
+      ],
+      "opponents/league/confirmation/switch.py": [
+        6,
+        0,
+        2
+      ],
+      "experiments/loss-improvement-1110/baseline.py": [
+        0,
+        8,
+        0
+      ]
+    },
+    "forfeits": 0,
+    "notices": 0,
+    "diagnostics": 0,
+    "max_leg_bank_s": 34.98406049000164
+  },
+  "selective": {
+    "wdl": [
+      24,
+      0,
+      0
+    ],
+    "by_stage": {
+      "1": [
+        12,
+        0,
+        0
+      ],
+      "2": [
+        12,
+        0,
+        0
+      ]
+    },
+    "by_opponent": {
+      "opponents/league/confirmation/pressure.py": [
+        8,
+        0,
+        0
+      ],
+      "opponents/league/confirmation/switch.py": [
+        8,
+        0,
+        0
+      ],
+      "experiments/loss-improvement-1110/baseline.py": [
+        8,
+        0,
+        0
+      ]
+    },
+    "forfeits": 0,
+    "notices": 0,
+    "diagnostics": 0,
+    "max_leg_bank_s": 33.762366792995635,
+    "paired_points": 0.25,
+    "point_blocks": [
+      0.16666666666666666,
+      0.3333333333333333
+    ],
+    "point_interval": [
+      0.16666666666666666,
+      0.3333333333333333
+    ],
+    "stage_differences": {
+      "1": 0.3333333333333333,
+      "2": 0.16666666666666666
+    }
+  }
+}

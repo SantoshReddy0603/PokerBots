@@ -1,0 +1,8 @@
+1 experiments/friend-review/pokerbots-discard-holdem-main/bot.py W/D/L [2, 0, 2] chips/hand 0.418 seed bootstrap 95% [0.208, 0.629] bank max 15.53 notices 0 forfeits 0
+1 experiments/review-fixes-1109/tight_reraise.py W/D/L [4, 0, 0] chips/hand 1.692 seed bootstrap 95% [1.655, 1.729] bank max 4.32 notices 0 forfeits 0
+1 opponents/league/confirmation/pressure.py W/D/L [4, 0, 0] chips/hand 1.122 seed bootstrap 95% [1.09, 1.154] bank max 7.86 notices 0 forfeits 0
+1 opponents/league/confirmation/trap.py W/D/L [4, 0, 0] chips/hand 1.565 seed bootstrap 95% [1.401, 1.729] bank max 17.7 notices 0 forfeits 0
+2 experiments/friend-review/pokerbots-discard-holdem-main/bot.py W/D/L [1, 0, 3] chips/hand -0.012 seed bootstrap 95% [-0.534, 0.51] bank max 45.34 notices 0 forfeits 0
+2 experiments/review-fixes-1109/tight_reraise.py W/D/L [4, 0, 0] chips/hand 1.335 seed bootstrap 95% [1.27, 1.401] bank max 25.17 notices 0 forfeits 0
+2 opponents/league/confirmation/pressure.py W/D/L [4, 0, 0] chips/hand 1.117 seed bootstrap 95% [1.097, 1.137] bank max 19.75 notices 0 forfeits 0
+2 opponents/league/confirmation/trap.py W/D/L [4, 0, 0] chips/hand 1.394 seed bootstrap 95% [1.359, 1.429] bank max 42.13 notices 0 forfeits 0

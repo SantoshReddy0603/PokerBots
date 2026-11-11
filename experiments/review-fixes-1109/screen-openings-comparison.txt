@@ -1,0 +1,26 @@
+1 opponents/league/confirmation/trap.py paired points/capped/raw [0, 0.0, -0.0306]
+1 experiments/review-fixes-1109/tight_reraise.py paired points/capped/raw [0, 0.0, 0.025]
+1 opponents/league/confirmation/pressure.py paired points/capped/raw [0, 0.0, -0.0088]
+1 experiments/friend-review/pokerbots-discard-holdem-main/bot.py paired points/capped/raw [0.25, 0.7494, 0.9313]
+1 match points 0.0625 seed blocks 2 95% bootstrap [0, 0.125]
+1 capped chips/hand 0.1873 seed blocks 2 95% bootstrap [0.1247, 0.25]
+1 raw chips/hand 0.2292 seed blocks 2 95% bootstrap [0.1091, 0.3494]
+1 candidate W/D/L [15, 0, 1] max bank 18.932 failures/notices/stderr 0 0 0
+1 reference W/D/L [14, 0, 2] max bank 18.248 failures/notices/stderr 0 0 0
+1 points without opponents/league/confirmation/trap.py 0.0833
+1 points without experiments/review-fixes-1109/tight_reraise.py 0.0833
+1 points without opponents/league/confirmation/pressure.py 0.0833
+1 points without experiments/friend-review/pokerbots-discard-holdem-main/bot.py 0
+2 opponents/league/confirmation/trap.py paired points/capped/raw [0, 0.0, -0.0123]
+2 experiments/review-fixes-1109/tight_reraise.py paired points/capped/raw [0, 0.0, 0.03]
+2 opponents/league/confirmation/pressure.py paired points/capped/raw [0, 0.0, -0.0075]
+2 experiments/friend-review/pokerbots-discard-holdem-main/bot.py paired points/capped/raw [-0.25, -0.661, -0.7382]
+2 match points -0.0625 seed blocks 2 95% bootstrap [-0.125, 0]
+2 capped chips/hand -0.1653 seed blocks 2 95% bootstrap [-0.25, -0.0805]
+2 raw chips/hand -0.182 seed blocks 2 95% bootstrap [-0.2645, -0.0995]
+2 candidate W/D/L [15, 0, 1] max bank 46.853 failures/notices/stderr 0 0 0
+2 reference W/D/L [16, 0, 0] max bank 43.51 failures/notices/stderr 0 0 0
+2 points without opponents/league/confirmation/trap.py -0.0833
+2 points without experiments/review-fixes-1109/tight_reraise.py -0.0833
+2 points without opponents/league/confirmation/pressure.py -0.0833
+2 points without experiments/friend-review/pokerbots-discard-holdem-main/bot.py 0

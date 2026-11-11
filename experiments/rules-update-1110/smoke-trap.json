@@ -1,0 +1,92 @@
+{
+  "stage": 1,
+  "wall_s": 27.543133399994986,
+  "seed": "rules-1110-smoke-20261110-a",
+  "played": 400,
+  "scheduled_hands": 400,
+  "net": 2429,
+  "delta": 400,
+  "points": 1,
+  "forfeits": {},
+  "forfeit_at": null,
+  "bots": [
+    {
+      "path": "checkpoints\\rules-1110.py",
+      "sha256": "4bee6c3e30a87610f60768f3b30af13d995fcf10ce66a63fe7c13848bc042cd3",
+      "notices": 0,
+      "bank_s": 17.035747699999774,
+      "diagnostics": 0,
+      "startup_to_first_reply_ms": 313.476700001047,
+      "p99_ms": 37.25269999995362,
+      "max_ms": 59.436199997435324
+    },
+    {
+      "path": "opponents\\league\\confirmation\\trap.py",
+      "sha256": "ef1763a2930d24a66201aeff6a4d30644ae1024a2ce8b7b6aad972b3f4872fca",
+      "notices": 0,
+      "bank_s": 0.22192010006983764,
+      "diagnostics": 0,
+      "startup_to_first_reply_ms": 301.16569999518106,
+      "p99_ms": 0.44860000343760476,
+      "max_ms": 0.6176000024424866
+    }
+  ],
+  "legs": [
+    {
+      "leg": 1,
+      "played": 200,
+      "net": 64,
+      "wall_s": 13.29961860000185,
+      "bots": [
+        {
+          "path": "checkpoints\\rules-1110.py",
+          "sha256": "4bee6c3e30a87610f60768f3b30af13d995fcf10ce66a63fe7c13848bc042cd3",
+          "notices": 0,
+          "bank_s": 8.108532899990678,
+          "diagnostics": 0,
+          "startup_to_first_reply_ms": 313.476700001047,
+          "p99_ms": 31.050699995830655,
+          "max_ms": 34.72180000244407
+        },
+        {
+          "path": "opponents\\league\\confirmation\\trap.py",
+          "sha256": "ef1763a2930d24a66201aeff6a4d30644ae1024a2ce8b7b6aad972b3f4872fca",
+          "notices": 0,
+          "bank_s": 0.1071577000329853,
+          "diagnostics": 0,
+          "startup_to_first_reply_ms": 301.16569999518106,
+          "p99_ms": 0.4230999984429218,
+          "max_ms": 0.5651000028592534
+        }
+      ]
+    },
+    {
+      "leg": 2,
+      "played": 200,
+      "net": 2365,
+      "wall_s": 14.151667400001315,
+      "bots": [
+        {
+          "path": "checkpoints\\rules-1110.py",
+          "sha256": "4bee6c3e30a87610f60768f3b30af13d995fcf10ce66a63fe7c13848bc042cd3",
+          "notices": 0,
+          "bank_s": 8.927214800009097,
+          "diagnostics": 0,
+          "startup_to_first_reply_ms": 298.6613000030047,
+          "p99_ms": 37.25269999995362,
+          "max_ms": 59.436199997435324
+        },
+        {
+          "path": "opponents\\league\\confirmation\\trap.py",
+          "sha256": "ef1763a2930d24a66201aeff6a4d30644ae1024a2ce8b7b6aad972b3f4872fca",
+          "notices": 0,
+          "bank_s": 0.11476240003685234,
+          "diagnostics": 0,
+          "startup_to_first_reply_ms": 67.0105999961379,
+          "p99_ms": 0.44860000343760476,
+          "max_ms": 0.6176000024424866
+        }
+      ]
+    }
+  ]
+}

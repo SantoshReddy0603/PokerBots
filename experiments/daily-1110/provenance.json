@@ -1,0 +1,25 @@
+{
+  "sources": {
+    "src/learning_protocol.py": "7eee42d8ddf7b49f3fe688a258ad2534a12d02459e1170f0173c295d3344d945",
+    "src/poker.py": "d80d6d889cf86931f0fe5ef2253f4bd1f180791113f15603350b81097c00adcb",
+    "src/preflop_key.py": "c54412243ba7035b28ed7bde62eec54622a4a3cc940f92707c04dc72afe1ea68",
+    "src/preflop_table.py": "31be7256b0ad3b8d1b389e25b674640f9ca19e4fd45d3cd934c03214132c7adb",
+    "src/friend_ranges.py": "b4181ef2d84f3abca89a5ca24a24e67dc2533e60eb764162fb417a9d23ba1104",
+    "src/learning.py": "1d540159557f8bed697cab0e34360256890caea3824163cb8593070bba895be7",
+    "src/vector_equity.py": "77e0fafc90563005810664703599c734ee8a7c5fe09bc1d8bbe845716e4aa8f6",
+    "src/river_order_equity.py": "9befb9d5a7d357f08280cafec468463f0aa1175f117e5089e47d513b72d04b9c",
+    "src/learning_policy.py": "f20358795432bcf8098c75a3a40f3fc7fe7a6ea3dd5cebe69700209cfcfb93a0"
+  },
+  "candidate_sha256": "8478ee0a6d78aa25f74b9b259cae39549d68cfe0aa972d5fc609df43bac3b7c3",
+  "baseline_sha256": "44b011220dce58a5a9ce0c8352c66a1f3c5054ef791c1669a1a3cfb2a68abe46",
+  "friend_sha256": "89ca146619df53be4179b77be94dd0da6ca7262e57e76033fa7b117050c55cd0",
+  "friend_git_blob": "a5c8b01162763bb9c67051a5a625eb06607baf5a",
+  "friend_url": "https://github.com/sricharanreddycheruku/pokerbots-discard-holdem/blob/main/bot.py",
+  "hypothesis": "Exact river ordering improves range and continuation selection; no nonriver change.",
+  "promotion": "Fresh positive paired match points with convincing block support, no severe matchup regression, then constrained validation. Otherwise retain release.",
+  "environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  }
+}

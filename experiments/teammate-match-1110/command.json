@@ -1,0 +1,31 @@
+{
+  "argv": [
+    "wsl",
+    "-d",
+    "Ubuntu",
+    "--",
+    "env",
+    "OPENBLAS_NUM_THREADS=1",
+    "OMP_NUM_THREADS=1",
+    "MKL_NUM_THREADS=1",
+    "/home/miyyapuram_saivarun/pokerbots-runtime/Python-3.11.9/python",
+    "-B",
+    "tools/evaluate.py",
+    "experiments\\teammate-match-1110\\ours.py",
+    "experiments\\teammate-match-1110\\teammate.py",
+    "--engine-format",
+    "legs",
+    "--manifest",
+    "experiments\\teammate-match-1110\\seeds.json",
+    "--split",
+    "confirmation",
+    "--count",
+    "4",
+    "--jobs",
+    "2",
+    "--out",
+    "experiments\\teammate-match-1110\\results.jsonl"
+  ],
+  "cwd": "C:\\Users\\varun\\OneDrive\\Documents\\ChatGPT\\PokerBots",
+  "note": "official two-leg clock limits enabled; two matches in parallel; BLAS threads=1; no hard CPU/RAM sandbox in this matrix"
+}

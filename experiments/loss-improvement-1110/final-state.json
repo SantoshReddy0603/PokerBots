@@ -1,0 +1,26 @@
+{
+  "artifact_sha256": "c264cb8a9e914a210be622d39751aa9ef45e9b9b717b1ef9281e069438e3a39a",
+  "bytes": 77217,
+  "promoted": true,
+  "all_declared_gates": {
+    "confirmation_points": true,
+    "confirmation_stages": true,
+    "confirmation_matchups": true,
+    "confirmation_failures": true,
+    "regression_points": true,
+    "regression_stages": true,
+    "regression_matchups": true,
+    "regression_failures": true,
+    "confirmation_block_support": true,
+    "champion_points": true,
+    "stress_exact_bytes": true,
+    "stress_failures": true,
+    "stress_banks": true,
+    "correctness": true,
+    "audit": true,
+    "no_site_legs": true,
+    "baseline_preserved": true
+  },
+  "manifest_sha256": "c4de11f0c68b57675430efb13dc8f0ae06d192e3f8624fa2647011c7d08a3dc6",
+  "baseline_sha256": "bb86e3e7dafd4019157bf9f24cee640e4c9dfbb276883dd92fee1585a03a1990"
+}

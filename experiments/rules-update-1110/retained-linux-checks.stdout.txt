@@ -1,0 +1,8 @@
+['tests/leg_compatibility.py', 'dist/bot.py'] 0
+['tests/protocol.py', 'dist/bot.py'] 0
+['tests/selection.py', 'dist/bot.py'] 0
+['tests/evaluator.py', 'dist/bot.py'] 0
+['tests/learning.py', 'dist/bot.py'] 0
+['tests/review_decisions.py', 'dist/bot.py'] 0
+['tests/optimization.py', 'dist/bot.py'] 0
+['-S', 'tests/leg_compatibility.py', 'dist/bot.py'] 0

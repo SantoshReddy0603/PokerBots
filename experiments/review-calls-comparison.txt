@@ -1,0 +1,39 @@
+Explicitly excluded after matrix validation ['opponents/league/development/range.py']
+1 opponents/league/development/polar.py paired points/capped/raw [0, 0.0, 0.4825]
+1 opponents/league/development/pressure.py paired points/capped/raw [0, 0.0, -0.1969]
+1 opponents/league/development/trap.py paired points/capped/raw [0, 0.0, -0.3412]
+1 opponents/league/development/jam.py paired points/capped/raw [0, 0.1669, 3.9188]
+1 opponents/league/development/adversary.py paired points/capped/raw [0, 0.0, 0.2244]
+1 checkpoints/betting.py paired points/capped/raw [-0.5, -0.1544, -0.1619]
+1 checkpoints/adaptive.py paired points/capped/raw [0.25, 0.3263, 0.75]
+1 match points -0.0357 seed blocks 2 95% bootstrap [-0.0714, 0]
+1 capped chips/hand 0.0484 seed blocks 2 95% bootstrap [0.0416, 0.0552]
+1 raw chips/hand 0.6679 seed blocks 2 95% bootstrap [-0.1382, 1.4741]
+1 candidate W/D/L [23, 0, 5] max bank 38.587 failures/notices/stderr 0 0 0
+1 reference W/D/L [24, 0, 4] max bank 38.13 failures/notices/stderr 0 0 0
+1 points without opponents/league/development/polar.py -0.0417
+1 points without opponents/league/development/pressure.py -0.0417
+1 points without opponents/league/development/trap.py -0.0417
+1 points without opponents/league/development/jam.py -0.0417
+1 points without opponents/league/development/adversary.py -0.0417
+1 points without checkpoints/betting.py 0.0417
+1 points without checkpoints/adaptive.py -0.0833
+2 opponents/league/development/polar.py paired points/capped/raw [0, 0.0, 0.2172]
+2 opponents/league/development/pressure.py paired points/capped/raw [0, 0.0, 0.7083]
+2 opponents/league/development/trap.py paired points/capped/raw [0, -0.0542, -0.1755]
+2 opponents/league/development/jam.py paired points/capped/raw [0.5, 1.4305, 4.626]
+2 opponents/league/development/adversary.py paired points/capped/raw [0, 0.0, -0.5805]
+2 checkpoints/betting.py paired points/capped/raw [-0.25, -0.1143, -0.0635]
+2 checkpoints/adaptive.py paired points/capped/raw [0.25, 0.146, -0.2235]
+2 match points 0.0714 seed blocks 2 95% bootstrap [0.0714, 0.0714]
+2 capped chips/hand 0.2011 seed blocks 2 95% bootstrap [0.1631, 0.2392]
+2 raw chips/hand 0.6441 seed blocks 2 95% bootstrap [-0.0261, 1.3143]
+2 candidate W/D/L [26, 0, 2] max bank 94.063 failures/notices/stderr 0 0 0
+2 reference W/D/L [24, 0, 4] max bank 97.043 failures/notices/stderr 0 0 0
+2 points without opponents/league/development/polar.py 0.0833
+2 points without opponents/league/development/pressure.py 0.0833
+2 points without opponents/league/development/trap.py 0.0833
+2 points without opponents/league/development/jam.py 0
+2 points without opponents/league/development/adversary.py 0.0833
+2 points without checkpoints/betting.py 0.125
+2 points without checkpoints/adaptive.py 0.0417

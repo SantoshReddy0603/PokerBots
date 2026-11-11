@@ -1,0 +1,18 @@
+1 opponents/league/development-v2/range.py paired points/capped/raw [0.25, 0.2756, 0.3531]
+1 opponents/league/development-v2/trap.py paired points/capped/raw [0, 0.0, 0.2162]
+1 match points 0.125 seed blocks 2 95% bootstrap [0, 0.25]
+1 capped chips/hand 0.1378 seed blocks 2 95% bootstrap [-0.1338, 0.4094]
+1 raw chips/hand 0.2847 seed blocks 2 95% bootstrap [-0.135, 0.7044]
+1 candidate W/D/L [8, 0, 0] max bank 21.717 failures/notices/stderr 0 0 0
+1 reference W/D/L [7, 0, 1] max bank 31.584 failures/notices/stderr 0 0 0
+1 points without opponents/league/development-v2/range.py 0
+1 points without opponents/league/development-v2/trap.py 0.25
+2 opponents/league/development-v2/range.py paired points/capped/raw [0, 0.2432, 0.393]
+2 opponents/league/development-v2/trap.py paired points/capped/raw [0, 0.0, -0.011]
+2 match points 0 seed blocks 2 95% bootstrap [0, 0]
+2 capped chips/hand 0.1216 seed blocks 2 95% bootstrap [0.0, 0.2432]
+2 raw chips/hand 0.191 seed blocks 2 95% bootstrap [0.0875, 0.2945]
+2 candidate W/D/L [8, 0, 0] max bank 41.439 failures/notices/stderr 0 0 0
+2 reference W/D/L [8, 0, 0] max bank 81.854 failures/notices/stderr 0 0 0
+2 points without opponents/league/development-v2/range.py 0
+2 points without opponents/league/development-v2/trap.py 0

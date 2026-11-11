@@ -1,0 +1,40 @@
+{
+  "artifact": "dist/bot.py",
+  "bytes": 76871,
+  "sha256": "bb86e3e7dafd4019157bf9f24cee640e4c9dfbb276883dd92fee1585a03a1990",
+  "python": "3.11.9 (main, Nov  4 2026, 00:53:34) [GCC 11.4.0]",
+  "build": "python3.11 tools/build_submission.py",
+  "sources": [
+    "src/learning_protocol.py",
+    "src/poker.py",
+    "src/preflop_key.py",
+    "src/preflop_table.py",
+    "src/friend_ranges.py",
+    "src/learning.py",
+    "src/vector_equity.py",
+    "src/learning_policy.py"
+  ],
+  "provenance": "Independently implemented leg-local frequency model, base-15 NumPy histogram evaluator and continuing-range policy built on this project's original scalar evaluator and equity table. Teammate code used only as an external opponent; unchanged organizer engine used as test oracle.",
+  "numpy": "optional; NumPy 2.2.6 full Linux checks and no-site-packages (-S) official-leg protocol fixtures passed",
+  "validation_note": "Direct rank histograms preserve fixed-draw outputs: 16,536 rank rows and 60 complete posterior cases exactly match the prior release. Local single-CPU warm median equity time improved 4.8-6.8%. Both full current-format stages passed one-CPU/1-GiB validation. Exact release versus fetched teammate: 2/4 wins on one fresh seed block. Calculation efficiency is improved; no stronger win-rate claim follows. See experiments/daily-1110/RESULTS.md.",
+  "source_sha256": {
+    "src/learning_protocol.py": "7eee42d8ddf7b49f3fe688a258ad2534a12d02459e1170f0173c295d3344d945",
+    "src/poker.py": "d80d6d889cf86931f0fe5ef2253f4bd1f180791113f15603350b81097c00adcb",
+    "src/preflop_key.py": "c54412243ba7035b28ed7bde62eec54622a4a3cc940f92707c04dc72afe1ea68",
+    "src/preflop_table.py": "31be7256b0ad3b8d1b389e25b674640f9ca19e4fd45d3cd934c03214132c7adb",
+    "src/friend_ranges.py": "b4181ef2d84f3abca89a5ca24a24e67dc2533e60eb764162fb417a9d23ba1104",
+    "src/learning.py": "1d540159557f8bed697cab0e34360256890caea3824163cb8593070bba895be7",
+    "src/vector_equity.py": "dab1406e95f9e1795927892b75977dd91a77cb3a132afbff33ca075efdc1447f",
+    "src/learning_policy.py": "f20358795432bcf8098c75a3a40f3fc7fe7a6ea3dd5cebe69700209cfcfb93a0"
+  },
+  "final_report": "experiments/daily-1110/exact-friend.jsonl",
+  "release_report": "experiments/daily-1110/histogram-stress.jsonl",
+  "fallback": {
+    "path": "checkpoints/pre-daily-1110.py",
+    "sha256": "44b011220dce58a5a9ce0c8352c66a1f3c5054ef791c1669a1a3cfb2a68abe46",
+    "report": "experiments/rules-update-1110/retained-stress.jsonl"
+  },
+  "status": "locally validated",
+  "engine_format": "two-leg-2026-11-10",
+  "organizer_engine_sha256": "f42c38fa30b44b55f3963e67f836134b49f5afbcf810e781f289d6458d826390"
+}

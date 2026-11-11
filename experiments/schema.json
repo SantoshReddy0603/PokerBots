@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "match": "stage, seed, assignment, sha256 for each bot, played, net, capped delta, points, forfeits, notices, diagnostic counts, bank seconds, p99/max reply ms, wall seconds",
+  "aggregation": "pair by stage/opponent/seed, bootstrap seed blocks"
+}

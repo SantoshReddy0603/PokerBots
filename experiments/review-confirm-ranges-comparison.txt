@@ -1,0 +1,18 @@
+1 opponents/league/confirmation/tightjam.py paired points/capped/raw [-0.125, -0.1753, -0.3997]
+1 opponents/league/confirmation/switch.py paired points/capped/raw [0, 0.0, -2.6053]
+1 match points -0.0625 seed blocks 4 95% bootstrap [-0.1875, 0]
+1 capped chips/hand -0.0877 seed blocks 4 95% bootstrap [-0.3741, 0.1111]
+1 raw chips/hand -1.5025 seed blocks 4 95% bootstrap [-2.3111, -0.7883]
+1 candidate W/D/L [15, 0, 1] max bank 17.201 failures/notices/stderr 0 0 0
+1 reference W/D/L [16, 0, 0] max bank 35.903 failures/notices/stderr 0 0 0
+1 points without opponents/league/confirmation/tightjam.py 0
+1 points without opponents/league/confirmation/switch.py -0.125
+2 opponents/league/confirmation/tightjam.py paired points/capped/raw [-0.375, -0.7974, -0.8639]
+2 opponents/league/confirmation/switch.py paired points/capped/raw [0, 0.0, -1.5395]
+2 match points -0.1875 seed blocks 4 95% bootstrap [-0.375, 0]
+2 capped chips/hand -0.3987 seed blocks 4 95% bootstrap [-0.6828, -0.1893]
+2 raw chips/hand -1.2017 seed blocks 4 95% bootstrap [-1.4081, -0.9952]
+2 candidate W/D/L [13, 0, 3] max bank 44.466 failures/notices/stderr 0 0 0
+2 reference W/D/L [16, 0, 0] max bank 74.456 failures/notices/stderr 0 0 0
+2 points without opponents/league/confirmation/tightjam.py 0
+2 points without opponents/league/confirmation/switch.py -0.375

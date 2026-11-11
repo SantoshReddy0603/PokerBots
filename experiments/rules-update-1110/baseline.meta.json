@@ -1,0 +1,29 @@
+{
+  "seeds": [
+    "rules-1110-b450790eb2e13526f93c6764"
+  ],
+  "candidate": "checkpoints/pre-rules-1110.py",
+  "candidate_sha256": "44b011220dce58a5a9ce0c8352c66a1f3c5054ef791c1669a1a3cfb2a68abe46",
+  "opponents": {
+    "opponents/league/confirmation/trap.py": "ef1763a2930d24a66201aeff6a4d30644ae1024a2ce8b7b6aad972b3f4872fca",
+    "experiments/review-fixes-1109/tight_reraise.py": "2b6b73362bdb5b1c186bfaac02f32476624bdb8fb636a9b24b4e084abe6571fa",
+    "opponents/league/confirmation/pressure.py": "6a2f80570573b4448447dc117bc14fa58552abde76f54d695dda7264eb3c85d0",
+    "experiments/friend-review/pokerbots-discard-holdem-main/bot.py": "0016b0f931f16c3cb414696cd90861d1c1673ef4dde66de4c02b33b071846886"
+  },
+  "python": "3.11.9 (main, Nov  4 2026, 00:53:34) [GCC 11.4.0]",
+  "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "jobs": 2,
+  "revision": "8bb00df877d7620bc32ba1ce594d565f11c898d9",
+  "clock": "official-per-leg-startup-grace-production-time-adaptive",
+  "policy_rng": "embedded in hashed bot sources",
+  "harness": {
+    "tools/benchmark_legs.py": "e4ba7fd517da3c1ca877fa167512c60a27da57ca25c2e4a00828beab38077dee",
+    "tools/evaluate.py": "d550a449ce978b1dc7b981dccea78f3a1b9fcd1b53db9b2ac1930f939bafbcb4",
+    "tools/matrix.py": "0c6f47b89368ef096a499d0543e742efec2c2d899565f62eb1ee17b7cc9e5c88",
+    "vendor/Starter_Kit_2026_11_10/engine.py": "f42c38fa30b44b55f3963e67f836134b49f5afbcf810e781f289d6458d826390"
+  },
+  "manifest": "experiments/rules-update-1110/seeds.json",
+  "manifest_sha256": "aa5b770177af5855c378c2eadd32c8524657cfa0d4a292960da4849abf7e3438",
+  "split": "confirmation",
+  "engine_format": "two-leg-2026-11-10"
+}

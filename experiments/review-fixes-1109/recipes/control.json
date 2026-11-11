@@ -1,0 +1,15 @@
+{
+  "sources": [
+    "src/learning_protocol.py",
+    "src/poker.py",
+    "src/preflop_key.py",
+    "src/preflop_table.py",
+    "src/bet_features.py",
+    "experiments/review-fixes-1109/recipes/control.py",
+    "src/review_ranges.py",
+    "src/review_learning.py",
+    "src/review_equity.py",
+    "src/review_policy.py"
+  ],
+  "sha256": "01926f2a46df1669a30b9e0257c80110174f1e9cfccd7a50c45c4f681d8aa7d4"
+}

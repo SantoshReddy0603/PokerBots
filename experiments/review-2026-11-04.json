@@ -1,0 +1,46 @@
+{
+  "review_date_ist": "2026-11-04",
+  "artifact": "dist/bot.py",
+  "sha256": "404af500d979b827d40bd34ff2aecb3c2545d203dd9c94ddc0be53a685c9e171",
+  "source_build_matches": true,
+  "source_manifest_hash_mismatches": [],
+  "starter_zip_files_match": 4,
+  "tests_rerun": ["tests/protocol.py", "tests/selection.py", "tests/evaluator.py"],
+  "tests_status": "passed",
+  "test_interpreter": "WSL CPython 3.11.9",
+  "oracle_cases": 24000,
+  "evaluator_per_second_observed": 119956,
+  "new_full_matches_run": 0,
+  "controlled_river_probe": {
+    "method": "Replace simulate in the loaded policy globals temporarily with a fixed equity; restore afterward",
+    "equity": 0.25,
+    "pot_including_opponent_bet": 100,
+    "to_call": 10,
+    "call_ev_relative_to_fold": 17.5,
+    "decision": "fold",
+    "note": "Controlled decision-rule probe, not equity measured for a particular real hand"
+  },
+  "preflop_probe": {
+    "method": "simulate(hole, (), (), 20000, float('inf'), Random(981)); fresh RNG for each holding",
+    "interpreter": "Windows CPython 3.11.9",
+    "opponent_model": "Existing random holdings and default discard mixture; no betting evidence",
+    "hero_discard_model": "Existing flop-only pick heuristic",
+    "allin_pot": 202,
+    "allin_call": 198,
+    "break_even_equity": 0.495,
+    "results": [
+      {"hole": ["2s", "2h", "2d"], "heuristic_score": 0.71, "model_equity": 0.34145, "action": "call"},
+      {"hole": ["As", "Ah", "Kd"], "heuristic_score": 0.773, "model_equity": 0.801675, "action": "call"},
+      {"hole": ["As", "Kh", "Qd"], "heuristic_score": 0.615, "model_equity": 0.62915, "action": "fold"}
+    ],
+    "limitation": "Model-conditioned Monte Carlo results, not exact equity against an observed shoving range"
+  },
+  "historical_final_evaluation": {
+    "file": "experiments/m6-betting.jsonl",
+    "matches": 40,
+    "wins": 40,
+    "deal_seeds": ["sealed-0", "sealed-1"],
+    "opponent_configurations": 5,
+    "limitation": "Shared opponent template; correlated assignments and deal seeds"
+  }
+}

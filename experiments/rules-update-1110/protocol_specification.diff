@@ -1,0 +1,259 @@
+--- pokerbots_1\497da9d5-f0da-442b-b739-b5c06f15fe9b.pdf
++++ protocol_specification.pdf
+@@ -6,42 +6,46 @@
+ adjusted after benchmarking. Corrections or clarifications to this specification are announced
+ to all teams.
+ 1 Overview
+-A bot is a Python 3.11 program (bot.py) started fresh for every match. It communicates with
+-the match engineonlythroughstdin(messages from the engine) andstdout(the bot’s replies).
+-There is no network, no file access and no other channel. The engine is authoritative: it deals
+-the cards, tracks the game state, enforces legality and runs the clock.
++A bot is a Python 3.11 program (bot.py) started fresh for each leg of every match. A match
++is played in two legs; each leg contains every deal of the match once, and in the second leg
++the hole cards and seats are swapped between the bots (Rulebook 7.1). The bot communicates
++with the match engineonlythroughstdin(messages from the engine) andstdout(the bot’s
++replies). There is no network and no other channel. The engine is authoritative: it deals the
++cards, tracks the game state, enforces legality and runs the clock.
+ The game is heads-up no-limit Hold’em with two changes: each player receivesthreehole
+ cards, and after the flop betting each playerdiscards onehole card, simultaneously and face
+-up. The game rules are in Section 4 of the Rulebook. The Problem Statement(which will be
+-released on 1st November) gives them in full with worked examples.
++up. The game rules are in Section 4 of the Rulebook. The Problem Statement gives them in
++full with worked examples.
+ 2 Transport and Format
+ •Encoding:UTF-8. One message per line, terminated by\n.
+ •F ormat:each line is a single JSON object with a"type"field.
+ •Direction:the engine writes to the bot’s stdin; the bot writes to its stdout.
+ •Flushing:the bot must flush stdout after every message (print(..., flush=True)). Un-
+ flushed output does not reach the engine and consumes time bank.
+-•stdoutmust contain only protocol messages. Any other line (including debug prints) is a
+-malformed message (Section 9).
+-•stderrmay be used for debugging. It is captured, limited to 64KB per match, and never
+-parsed.
++•stdoutmust contain only protocol messages. A line sent while a request is outstanding is
++taken as the reply, so a debug print is a malformed reply (Section 9) and the real reply after
++it is ignored.
++•stderrmay be used for debugging. It is captured, limited to 64KB per leg, and never parsed.
+ •Thebotreadsonelineatatimeandrepliesonlytoarequest(action_requestordiscard_request).
+ A reply sent when no request is outstanding is ignored.
+ •F orward compatibility:the bot must ignore message types and fields it does not recognise.
+ 3 Conventions
+ •Cardsare two-character strings: rank (2 3 4 5 6 7 8 9 T J Q K A) then suit (s h d c),
+ for exampleAs,Td,2c. Ace is high in rank comparisons.
++1
+ •Chipsare integers. Blinds are 1 and 2. Every hand starts with 200 chips per player (stacks
+ reset every hand).
+-1
+ •Seatsare"button"(posts the small blind) and"big_blind". Seats alternate every hand.
+ •Streetsare"preflop","flop","turn"and"river".
+ •Actorsin history entries are"me"(the receiving bot) and"opp".
+ •Amountsforcallandraisemean thetotal chips the actor has committed on the current
+ street after the action(a “to” amount), not the increment.
+-•The bot is not told which deals are duplicates of each other, and it keeps no state between
+-matches.
++•The bot is not told which deals are duplicates of each other. It may keep state between
++hands within a leg, but it keeps no state between legs or between matches.
+ 4 Message Flow
+-engine -> bot init (once per match)
++The flow below is one leg. A match consists of two legs, and each leg is played by a newly
++started bot process, which receives its owninitandmatch_end.
++engine -> bot init (once per leg)
+ repeat for each hand:
+ engine -> bot new_hand
+ engine -> bot action_request (preflop, each time the bot must act)
+@@ -52,27 +56,26 @@
+ engine -> bot discard_result
+ ... turn and river betting ...
+ engine -> bot hand_result
+-engine -> bot match_end (once; the bot should then exit)
++engine -> bot match_end (once per leg; the bot should then exit)
+ A hand can end early: if a player folds, the engine sendshand_resultimmediately and no
+ further requests follow. If a player folds before the flop betting ends, there is no discard. If both
+ players are all-in, the remaining board cards are dealt and the discard still takes place after the
+ flop.
+ 5 Engine→Bot Messages
+-5.1init(once)
++5.1init(once per leg)
+ Field Type Meaning
+ typestr"init"
+ protocol_versionstr"1.0"
+-total_handsint number of hands in the match (400 in Stage 1, about 1000
+-in Stage 2)
++total_handsint number of hands in this leg (200 in Stage 1, 500 in Stage 2)
+ starting_stackint 200
+ small_blind,big_blindint 1 and 2
+-time_bank_msint total time bank for the match(provisional)
++time_bank_msint total time bank for this leg(provisional)
+ per_response_msint limit for any single reply, 5000(provisional)
+ 2
+ 5.2new_hand
+ Field Type Meaning
+ typestr"new_hand"
+-hand_idint 1-indexed
++hand_idint 1-indexed within the leg
+ seatstr"button"or"big_blind"
+ hole_cardslist[str] your 3 hole cards
+ stackint your stack before blinds (200)
+@@ -94,7 +97,7 @@
+ raises_leftint bets or raises still allowed on this street
+ historylist[object] all voluntary actions this hand, oldest first (blinds are
+ not listed)
+-time_left_msint remaining time bank
++time_left_msint remaining time bank for this leg
+ Ahistoryentryhastheform{"street":"flop","actor":"opp","action":"raise","amount":6}.
+ amountis present forcallandraiseonly.
+ 5.4discard_request
+@@ -107,7 +110,7 @@
+ boardlist[str] the 3 flop cards
+ potint total chips in the pot
+ my_stack,opp_stackint chips each player still has behind
+-time_left_msint remaining time bank
++time_left_msint remaining time bank for this leg
+ 3
+ 5.5discard_result
+ Sent after both discards are in. Both discarded cards are now public.
+@@ -136,10 +139,12 @@
+ codestr"malformed","illegal_action"or"illegal_discard"
+ appliedstr what the engine did instead, e.g."check","fold"or a card
+ 5.8match_end
++Sent once at the end of each leg.
+ Field Type Meaning
+ typestr"match_end"
+ reasonstr"complete","opp_forfeit"or"forfeit"
+-Aftermatch_endthe bot should exit.
++Aftermatch_endthe bot should exit. Areasonof"forfeit"or"opp_forfeit"in the first
++leg means the second leg will not be played.
+ 6 Bot→Engine Messages
+ 6.1action
+ Reply to eachaction_requestwith exactly one line:
+@@ -166,15 +171,19 @@
+ legal.
+ •At most 4 bets or raises are allowed per street (the big blind is the first one preflop). When
+ raises_leftis 0,raiseis not inlegal_actions.
++•raisecan also be absent whileraises_left>0, when the opponent is all-in. Always choose
++fromlegal_actions.
+ •Adiscardcard must be one of the bot’s current 3 hole cards.
+ 8 Time Limits (provisional)
+-•Time bank:one cumulative bank per match, not reset between hands: 60 seconds for a
+-400-hand Stage 1 match, 150 seconds for a Stage 2 match of about 1000 hands.
++•Time bank:one cumulative bank per leg, not reset between hands: 30 seconds per leg in
++Stage 1 (two legs of 200 hands), 75 seconds per leg in Stage 2 (two legs of 500 hands).
+ •What is charged:thetimefromwhentheenginesendsanaction_requestordiscard_request
+ until it receives the complete reply line. Both discard clocks run at the same time.
+ •Per reply:any single reply must arrive within 5 seconds.
+-•Start-up:5 seconds from launch to being ready forinit. This is not charged to the bank.
+-•W all-clock kill:180 seconds per match in Stage 1 and 450 seconds in Stage 2.
++•Start-up:5 seconds at the start of each leg. The clock for each request starts at the later
++of the moment it is sent and 5 seconds after launch, so time before that point is not charged,
++and the first reply may arrive up to 10 seconds after launch.
++•W all-clock kill:90 seconds per leg in Stage 1 and 225 seconds per leg in Stage 2.
+ •time_left_msis reported in every request so a bot can budget its computation.
+ •Resources:1 vCPU, 1GB RAM, no network, read-only filesystem.
+ 5
+@@ -185,40 +194,44 @@
+ unknown card)
+ Corrected tocheckif legal, otherwisefold. A
+ noticeis sent.
+-Illegal, missing or unparsable discard The lowest-ranked of your 3 hole cards is discarded
++Illegal discard, orcardmissing or
++unparsable
++The lowest-ranked of your 3 hole cards is discarded
+ (2 lowest, ace highest). Among cards of equal rank,
+ the one whose suit comes first in the order spades,
+ hearts, diamonds, clubs is discarded. Anoticeis
+-sent.
+-Crash, or end of file on stdout Forfeit of the remaining match: a loss, and the
+-opponent’s result is set to∆ = +C.
++sent. No reply at all is a timeout.
++Crash, or end of file on stdout Forfeit of the remaining match: a loss with∆ =−C,
++and the opponent’s result is set to∆ = +C. A
++forfeit in either leg forfeits the whole match; after a
++first-leg forfeit the second leg is not played.
+ Time bank exhausted, reply later than
+ 5 seconds, or wall-clock kill
+ Same as a crash.
+ Reply when no request is outstanding Ignored.
+ 10 Example Hand
+-The bot is on the button in hand 1. Messages are shown from the bot’s point of view;E>Bis
+-engine to bot,B>Eis bot to engine. Lines are shortened to fit;...marks history entries left out
+-for readability (real messages contain every entry). Opponent replies are not shown, because
+-the bot only sees their effect.
+-E>B {"type":"init","protocol_version":"1.0","total_hands":400,"starting_stack":200,"small_blind
+-":1,"big_blind":2,"time_bank_ms":60000,"per_response_ms":5000}
++The bot is on the button in hand 1 of a Stage 1 leg. Messages are shown from the bot’s point of
++view;E>Bis engine to bot,B>Eis bot to engine. Lines are shortened to fit;...marks history
++entries left out for readability (real messages contain every entry). Opponent replies are not
++shown, because the bot only sees their effect.
++E>B {"type":"init","protocol_version":"1.0","total_hands":200,"starting_stack":200,"small_blind
++":1,"big_blind":2,"time_bank_ms":30000,"per_response_ms":5000}
+ E>B {"type":"new_hand","hand_id":1,"seat":"button","hole_cards":["As","Kd","7c"],"stack":200,"
+ opp_stack":200}
+ E>B {"type":"action_request","hand_id":1,"street":"preflop","board":[],"pot":3,"my_bet":1,"
+ opp_bet":2,"to_call":1,"my_stack":199,"opp_stack":198,"legal_actions":["fold","call","raise
+-"],"min_raise":4,"max_raise":200,"raises_left":3,"history":[],"time_left_ms":60000}
++"],"min_raise":4,"max_raise":200,"raises_left":3,"history":[],"time_left_ms":30000}
+ B>E {"type":"action","action":"raise","amount":6}
+ (opponent calls, the flop is dealt, opponent checks)
+ E>B {"type":"action_request","hand_id":1,"street":"flop","board":["Ah","7d","2s"],"pot":12,"
+ my_bet":0,"opp_bet":0,"to_call":0,"my_stack":194,"opp_stack":194,"legal_actions":["check","
+ raise"],"min_raise":2,"max_raise":194,"raises_left":4,"history":[{"street":"preflop","actor
+ ":"me","action":"raise","amount":6},{"street":"preflop","actor":"opp","action":"call","
+-amount":6},{"street":"flop","actor":"opp","action":"check"}],"time_left_ms":59940}
++amount":6},{"street":"flop","actor":"opp","action":"check"}],"time_left_ms":29940}
+ B>E {"type":"action","action":"raise","amount":6}
+ (opponent calls; flop betting is over)
+ E>B {"type":"discard_request","hand_id":1,"hole_cards":["As","Kd","7c"],"board":["Ah","7d","2s
+-"],"pot":24,"my_stack":188,"opp_stack":188,"time_left_ms":59900}
++"],"pot":24,"my_stack":188,"opp_stack":188,"time_left_ms":29900}
+ B>E {"type":"discard","card":"Kd"}
+ E>B {"type":"discard_result","hand_id":1,"my_discard":"Kd","opp_discard":"Qs","hole_cards":["As
+ ","7c"]}
+@@ -226,20 +239,21 @@
+ E>B {"type":"action_request","hand_id":1,"street":"turn","board":["Ah","7d","2s","3c"],"pot
+ ":24,"my_bet":0,"opp_bet":0,"to_call":0,"my_stack":188,"opp_stack":188,"legal_actions":["
+ check","raise"],"min_raise":2,"max_raise":188,"raises_left":4,"history":[ ... {"street":"
+-turn","actor":"opp","action":"check"}],"time_left_ms":59860}
++turn","actor":"opp","action":"check"}],"time_left_ms":29860}
+ B>E {"type":"action","action":"check"}
+ (river card 4h is dealt, opponent checks)
+ E>B {"type":"action_request","hand_id":1,"street":"river","board":["Ah","7d","2s","3c","4h"],"
+ pot":24,"my_bet":0,"opp_bet":0,"to_call":0,"my_stack":188,"opp_stack":188,"legal_actions
++6
+ ":["check","raise"],"min_raise":2,"max_raise":188,"raises_left":4,"history":[ ... {"street
+-":"river","actor":"opp","action":"check"}],"time_left_ms":59820}
+-6
++":"river","actor":"opp","action":"check"}],"time_left_ms":29820}
+ B>E {"type":"action","action":"raise","amount":10}
+ (opponent folds)
+ E>B {"type":"hand_result","hand_id":1,"result":"fold","net":12,"board":["Ah","7d","2s","3c","4h
+ "],"my_hole_cards":["As","7c"],"opp_hole_cards":null,"opp_discard":"Qs","history":[ ... ]}
+-... hands 2 to 400 ...
++... hands 2 to 200 ...
+ E>B {"type":"match_end","reason":"complete"}
++(the bot exits; the second leg starts a new bot process with its own init)
+ Chip check for hand 1: the bot committed6 + 6 + 10 = 22, the opponent12; the opponent
+ folded, so the bot won the opponent’s 12 chips (net= +12).
+ 11 Starter Bot (Python 3.11, standard library only)
+@@ -276,17 +290,18 @@
+ break
+ else:
+ # init, new_hand, discard_result, hand_result, notice:
+-# update your own state here; no reply is sent.
++# update your own state here (it lasts for this leg only); no reply is sent.
+ continue
+ print(json.dumps(reply), flush=True)
+ if__name__ == "__main__":
+ main()
++7
+ 12 Checklist Before You Upload
+ •The bot runs withpython3.11 bot.pyand uses only the standard library, numpy and scipy.
+-7
+ •Nothing but protocol JSON is printed to stdout, and every reply is flushed.
+ •The bot answers bothaction_requestanddiscard_request.
+ •The bot ignores message types it does not know.
+-•The bot has been tested against the starter kit’s local match runner for a full 400-hand match
+-inside the time bank.
++•The bot exits aftermatch_end.
++•The bot has been tested against the starter kit’s local match runner for a full Stage 1 match
++(two legs of 200 hands) inside the per-leg time bank.
+ 8

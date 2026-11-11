@@ -1,0 +1,17 @@
+{
+  "screen": {
+    "positive_total_match_point_difference": true,
+    "nonnegative_difference_at_each_stage": true,
+    "severe_regression": "Two or more fewer wins against any one opponent (8 matches per opponent).",
+    "selection": "Highest match points among eligible candidates; capped chips only breaks a tie."
+  },
+  "confirmation": {
+    "positive_paired_points": true,
+    "pooled_four_block_bootstrap_lower_bound_above_zero": true,
+    "nonnegative_difference_at_each_stage": true,
+    "severe_regression": "Two or more fewer wins against any one opponent (16 matches per opponent).",
+    "zero_new_corrections_diagnostics_forfeits": true,
+    "exact_byte_correctness_and_constrained_validation": true
+  },
+  "scope": "These operational selection gates do not guarantee no true regression. Four blocks provide limited uncertainty information. Frozen before inspecting any screening scores."
+}

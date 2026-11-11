@@ -1,0 +1,218 @@
+{
+  "combined": {
+    "sha256": "60075330f96b1213ea932324448523b39329b111d71e1098397a7ac50a7bed50",
+    "matches": 16,
+    "WDL": [
+      13,
+      0,
+      3
+    ],
+    "failures": 0,
+    "notices": 0,
+    "diagnostics": 0,
+    "runtime_by_stage": {
+      "1": {
+        "bank_max": 15.90595028499979,
+        "response_max": 107.5331609999921
+      },
+      "2": {
+        "bank_max": 48.391857133999906,
+        "response_max": 93.94494899999017
+      }
+    },
+    "opponents": {
+      "opponents/league/confirmation/trap.py": {
+        "1": [
+          2,
+          0,
+          0
+        ],
+        "2": [
+          2,
+          0,
+          0
+        ]
+      },
+      "experiments/review-fixes-1109/tight_reraise.py": {
+        "1": [
+          2,
+          0,
+          0
+        ],
+        "2": [
+          2,
+          0,
+          0
+        ]
+      },
+      "opponents/league/confirmation/pressure.py": {
+        "1": [
+          2,
+          0,
+          0
+        ],
+        "2": [
+          2,
+          0,
+          0
+        ]
+      },
+      "experiments/friend-review/pokerbots-discard-holdem-main/bot.py": {
+        "1": [
+          1,
+          0,
+          1
+        ],
+        "2": [
+          0,
+          0,
+          2
+        ]
+      }
+    }
+  },
+  "sampling-exp": {
+    "sha256": "5ff43881191ac9d68671aeaa2ebfd2e14635c53016808d39b59f8bc0e83c69d3",
+    "matches": 16,
+    "WDL": [
+      13,
+      0,
+      3
+    ],
+    "failures": 0,
+    "notices": 0,
+    "diagnostics": 0,
+    "runtime_by_stage": {
+      "1": {
+        "bank_max": 18.352431760000968,
+        "response_max": 102.79413899991141
+      },
+      "2": {
+        "bank_max": 55.248697304004395,
+        "response_max": 101.50886599996056
+      }
+    },
+    "opponents": {
+      "opponents/league/confirmation/trap.py": {
+        "1": [
+          2,
+          0,
+          0
+        ],
+        "2": [
+          2,
+          0,
+          0
+        ]
+      },
+      "experiments/review-fixes-1109/tight_reraise.py": {
+        "1": [
+          2,
+          0,
+          0
+        ],
+        "2": [
+          2,
+          0,
+          0
+        ]
+      },
+      "opponents/league/confirmation/pressure.py": {
+        "1": [
+          2,
+          0,
+          0
+        ],
+        "2": [
+          2,
+          0,
+          0
+        ]
+      },
+      "experiments/friend-review/pokerbots-discard-holdem-main/bot.py": {
+        "1": [
+          1,
+          0,
+          1
+        ],
+        "2": [
+          0,
+          0,
+          2
+        ]
+      }
+    }
+  },
+  "ranges-exp": {
+    "sha256": "46de5bd2cdb4afa698a098d290a29a173a36526b349a413099cffbff2b30d8db",
+    "matches": 16,
+    "WDL": [
+      12,
+      0,
+      4
+    ],
+    "failures": 0,
+    "notices": 0,
+    "diagnostics": 0,
+    "runtime_by_stage": {
+      "1": {
+        "bank_max": 16.044679513997835,
+        "response_max": 100.63948399999845
+      },
+      "2": {
+        "bank_max": 47.2950047690033,
+        "response_max": 154.4099150000875
+      }
+    },
+    "opponents": {
+      "opponents/league/confirmation/trap.py": {
+        "1": [
+          2,
+          0,
+          0
+        ],
+        "2": [
+          2,
+          0,
+          0
+        ]
+      },
+      "experiments/review-fixes-1109/tight_reraise.py": {
+        "1": [
+          2,
+          0,
+          0
+        ],
+        "2": [
+          2,
+          0,
+          0
+        ]
+      },
+      "opponents/league/confirmation/pressure.py": {
+        "1": [
+          2,
+          0,
+          0
+        ],
+        "2": [
+          2,
+          0,
+          0
+        ]
+      },
+      "experiments/friend-review/pokerbots-discard-holdem-main/bot.py": {
+        "1": [
+          0,
+          0,
+          2
+        ],
+        "2": [
+          0,
+          0,
+          2
+        ]
+      }
+    }
+  }
+}

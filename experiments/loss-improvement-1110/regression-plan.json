@@ -1,0 +1,10 @@
+{
+  "opponents": [
+    "pressure",
+    "switch",
+    "baseline champion"
+  ],
+  "matches_per_artifact": 24,
+  "gate": "No lower total/stage points than baseline; no >=2-win opponent regression. Selected versus baseline champion must score at least half the match points. Zero protocol/resource failures.",
+  "note": "Supplementary guard against passive play and fitting one opponent. Declared before running."
+}

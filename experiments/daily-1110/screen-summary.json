@@ -1,0 +1,137 @@
+{
+  "baseline": {
+    "sha256": "44b011220dce58a5a9ce0c8352c66a1f3c5054ef791c1669a1a3cfb2a68abe46",
+    "wins": 25,
+    "draws": 0,
+    "losses": 7,
+    "by_opponent": {
+      "experiments/daily-1110/friend-current.py": [
+        1,
+        0,
+        7
+      ],
+      "opponents/league/confirmation/trap.py": [
+        8,
+        0,
+        0
+      ],
+      "opponents/league/confirmation/pressure.py": [
+        8,
+        0,
+        0
+      ],
+      "experiments/review-fixes-1109/tight_reraise.py": [
+        8,
+        0,
+        0
+      ]
+    },
+    "by_stage": {
+      "1": {
+        "wdl": [
+          12,
+          0,
+          4
+        ],
+        "raw_chips_per_hand": 4.4675
+      },
+      "2": {
+        "wdl": [
+          13,
+          0,
+          3
+        ],
+        "raw_chips_per_hand": 3.7094375
+      }
+    },
+    "forfeits": 0,
+    "notices": 0,
+    "diagnostics": 0,
+    "max_leg_bank_s": 34.56606060899867
+  },
+  "river-order": {
+    "sha256": "8478ee0a6d78aa25f74b9b259cae39549d68cfe0aa972d5fc609df43bac3b7c3",
+    "wins": 24,
+    "draws": 0,
+    "losses": 8,
+    "by_opponent": {
+      "experiments/daily-1110/friend-current.py": [
+        0,
+        0,
+        8
+      ],
+      "opponents/league/confirmation/trap.py": [
+        8,
+        0,
+        0
+      ],
+      "opponents/league/confirmation/pressure.py": [
+        8,
+        0,
+        0
+      ],
+      "experiments/review-fixes-1109/tight_reraise.py": [
+        8,
+        0,
+        0
+      ]
+    },
+    "by_stage": {
+      "1": {
+        "wdl": [
+          12,
+          0,
+          4
+        ],
+        "raw_chips_per_hand": 4.72
+      },
+      "2": {
+        "wdl": [
+          12,
+          0,
+          4
+        ],
+        "raw_chips_per_hand": 3.7223124999999997
+      }
+    },
+    "forfeits": 0,
+    "notices": 0,
+    "diagnostics": 0,
+    "max_leg_bank_s": 34.26571399799616
+  },
+  "exact-friend": {
+    "sha256": "bb86e3e7dafd4019157bf9f24cee640e4c9dfbb276883dd92fee1585a03a1990",
+    "wins": 2,
+    "draws": 0,
+    "losses": 2,
+    "by_opponent": {
+      "experiments/daily-1110/friend-current.py": [
+        2,
+        0,
+        2
+      ]
+    },
+    "by_stage": {
+      "1": {
+        "wdl": [
+          2,
+          0,
+          0
+        ],
+        "raw_chips_per_hand": 1.0787499999999999
+      },
+      "2": {
+        "wdl": [
+          0,
+          0,
+          2
+        ],
+        "raw_chips_per_hand": -1.4025
+      }
+    },
+    "forfeits": 0,
+    "notices": 0,
+    "diagnostics": 0,
+    "max_leg_bank_s": 27.8206055500018
+  }
+}

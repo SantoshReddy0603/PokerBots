@@ -1,0 +1,13 @@
+Explicitly excluded after matrix validation ['opponents/league/development/range.py']
+1 checkpoints/betting.py paired points/capped/raw [0, -0.1656, -0.8069]
+1 match points 0.0 seed blocks 2 95% bootstrap [-0.5, 0.5]
+1 capped chips/hand -0.1656 seed blocks 2 95% bootstrap [-0.9725, 0.6412]
+1 raw chips/hand -0.8069 seed blocks 2 95% bootstrap [-2.455, 0.8413]
+1 candidate W/D/L [3, 0, 1] max bank 37.072 failures/notices/stderr 0 0 0
+1 reference W/D/L [3, 0, 1] max bank 34.909 failures/notices/stderr 0 0 0
+2 checkpoints/betting.py paired points/capped/raw [-0.25, -0.5887, -0.9443]
+2 match points -0.25 seed blocks 2 95% bootstrap [-0.5, 0]
+2 capped chips/hand -0.5887 seed blocks 2 95% bootstrap [-1.1195, -0.058]
+2 raw chips/hand -0.9443 seed blocks 2 95% bootstrap [-1.7925, -0.096]
+2 candidate W/D/L [1, 0, 3] max bank 90.018 failures/notices/stderr 0 0 0
+2 reference W/D/L [2, 0, 2] max bank 88.833 failures/notices/stderr 0 0 0

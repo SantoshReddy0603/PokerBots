@@ -1,0 +1,32 @@
+{
+  "flop|nonterminal": {
+    "calls": 70,
+    "mean_estimated": 0.49845097346345285,
+    "mean_known_holding": 0.2627906976744188,
+    "total_call": 4629
+  },
+  "turn|terminal": {
+    "calls": 134,
+    "mean_estimated": 0.5259889634260121,
+    "mean_known_holding": 0.26954513148543013,
+    "total_call": 14538
+  },
+  "river|terminal": {
+    "calls": 149,
+    "mean_estimated": 0.4801378990729541,
+    "mean_known_holding": 0.3691275167785235,
+    "total_call": 10857
+  },
+  "flop|terminal": {
+    "calls": 94,
+    "mean_estimated": 0.5686601029409162,
+    "mean_known_holding": 0.35886289201479704,
+    "total_call": 11470
+  },
+  "turn|nonterminal": {
+    "calls": 52,
+    "mean_estimated": 0.44963969097018935,
+    "mean_known_holding": 0.40315934065934056,
+    "total_call": 2375
+  }
+}

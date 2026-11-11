@@ -1,0 +1,75 @@
+{
+  "provenance": {
+    "repository": "https://github.com/sricharanreddycheruku/pokerbots-discard-holdem",
+    "commit": "8549810994f2189bb74b456d4c515db065a8d363",
+    "teammate_sha256": "1ce00b601ebdebb5d03ae1e307fdccbcd3c5d65ac90724e63599faa47a393ec0",
+    "ours_sha256": "bb86e3e7dafd4019157bf9f24cee640e4c9dfbb276883dd92fee1585a03a1990",
+    "fetched_utc": "2026-11-10T15:53:48.924630+00:00"
+  },
+  "overall": {
+    "matches": 16,
+    "wins": 6,
+    "draws": 0,
+    "losses": 10,
+    "net_chips": -6973,
+    "capped_chips": -4251,
+    "forfeits": 0
+  },
+  "stages": {
+    "1": {
+      "matches": 8,
+      "wins": 4,
+      "draws": 0,
+      "losses": 4,
+      "net_chips": -704,
+      "capped_chips": -597,
+      "forfeits": 0,
+      "ours_resources": {
+        "max_leg_bank_s": 9.093438190000008,
+        "max_reply_ms": 65.60201499999607,
+        "notices": 0,
+        "diagnostics": 0
+      },
+      "teammate_resources": {
+        "max_leg_bank_s": 6.944732432000038,
+        "max_reply_ms": 50.315122000000656,
+        "notices": 0,
+        "diagnostics": 0
+      }
+    },
+    "2": {
+      "matches": 8,
+      "wins": 2,
+      "draws": 0,
+      "losses": 6,
+      "net_chips": -6269,
+      "capped_chips": -3654,
+      "forfeits": 0,
+      "ours_resources": {
+        "max_leg_bank_s": 28.67700907800048,
+        "max_reply_ms": 98.36913499998445,
+        "notices": 0,
+        "diagnostics": 0
+      },
+      "teammate_resources": {
+        "max_leg_bank_s": 20.766791137998894,
+        "max_reply_ms": 60.224615999970865,
+        "notices": 0,
+        "diagnostics": 0
+      }
+    }
+  },
+  "seed_blocks": 4,
+  "summed_match_wall_s": 977.3084977899998,
+  "points_per_seed_block": [
+    0,
+    1,
+    0.5,
+    0
+  ],
+  "conditional_seed_bootstrap_95": [
+    0,
+    0.75
+  ],
+  "warning": "Four independent seed blocks, one opponent and time-adaptive play; this is not a hackathon win-probability estimate. Matrix used official clocks but no hard CPU/RAM sandbox."
+}

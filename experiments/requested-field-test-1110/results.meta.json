@@ -1,0 +1,34 @@
+{
+  "seeds": [
+    "requested1110-88ff2d037372b4189045fc65",
+    "requested1110-358f9e9d79bdabf213522d63",
+    "requested1110-f165fee3a5d48e0747ac2ebe",
+    "requested1110-61572b44e3527b8edc66b5e9"
+  ],
+  "candidate": "experiments/requested-field-test-1110/our-bot.py",
+  "candidate_sha256": "bb86e3e7dafd4019157bf9f24cee640e4c9dfbb276883dd92fee1585a03a1990",
+  "opponents": {
+    "experiments/requested-field-test-1110/friend.py": "89ca146619df53be4179b77be94dd0da6ca7262e57e76033fa7b117050c55cd0",
+    "experiments/requested-field-test-1110/trap.py": "ef1763a2930d24a66201aeff6a4d30644ae1024a2ce8b7b6aad972b3f4872fca",
+    "experiments/requested-field-test-1110/pressure.py": "6a2f80570573b4448447dc117bc14fa58552abde76f54d695dda7264eb3c85d0",
+    "experiments/requested-field-test-1110/tightjam.py": "c368e0d85235eac5b9e65278326509b5390979474391ec7148a2226c26f7c3ee",
+    "experiments/requested-field-test-1110/range.py": "bc3d677a1d1cc2e67a361b8c716496d2aab6f8ef916844d9570c07ce2e15d554",
+    "experiments/requested-field-test-1110/polar.py": "a40b8d60f4b16e50089392cdc81413e01a31829a7325c5fa986217ebc7cbe8a1"
+  },
+  "python": "3.11.9 (main, Nov  4 2026, 00:53:34) [GCC 11.4.0]",
+  "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "jobs": 4,
+  "revision": "8bb00df877d7620bc32ba1ce594d565f11c898d9",
+  "clock": "official-per-leg-startup-grace-production-time-adaptive",
+  "policy_rng": "embedded in hashed bot sources",
+  "harness": {
+    "tools/benchmark_legs.py": "e4ba7fd517da3c1ca877fa167512c60a27da57ca25c2e4a00828beab38077dee",
+    "tools/evaluate.py": "d550a449ce978b1dc7b981dccea78f3a1b9fcd1b53db9b2ac1930f939bafbcb4",
+    "tools/matrix.py": "0c6f47b89368ef096a499d0543e742efec2c2d899565f62eb1ee17b7cc9e5c88",
+    "vendor/Starter_Kit_2026_11_10/engine.py": "f42c38fa30b44b55f3963e67f836134b49f5afbcf810e781f289d6458d826390"
+  },
+  "manifest": "experiments/requested-field-test-1110/seeds.json",
+  "manifest_sha256": "dd39258392f9c554f78a7296baa97cdc4ad229eb70fc47fa3fc2a2ce2fef9dd6",
+  "split": "requested_test",
+  "engine_format": "two-leg-2026-11-10"
+}

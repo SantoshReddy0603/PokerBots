@@ -1,0 +1,29 @@
+{
+  "seeds": [
+    "reviewfix-1109-screen-a",
+    "reviewfix-1109-screen-b"
+  ],
+  "candidate": "checkpoints/review-1109-combined.py",
+  "candidate_sha256": "60075330f96b1213ea932324448523b39329b111d71e1098397a7ac50a7bed50",
+  "opponents": {
+    "opponents/league/confirmation/trap.py": "ef1763a2930d24a66201aeff6a4d30644ae1024a2ce8b7b6aad972b3f4872fca",
+    "experiments/review-fixes-1109/tight_reraise.py": "2b6b73362bdb5b1c186bfaac02f32476624bdb8fb636a9b24b4e084abe6571fa",
+    "opponents/league/confirmation/pressure.py": "6a2f80570573b4448447dc117bc14fa58552abde76f54d695dda7264eb3c85d0",
+    "experiments/friend-review/pokerbots-discard-holdem-main/bot.py": "0016b0f931f16c3cb414696cd90861d1c1673ef4dde66de4c02b33b071846886"
+  },
+  "python": "3.11.9 (main, Nov  4 2026, 00:53:34) [GCC 11.4.0]",
+  "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "jobs": 2,
+  "revision": "342976ea4f09f0f99bdaa76757e58ddb55380927",
+  "clock": "production-time-adaptive",
+  "policy_rng": "embedded in hashed bot sources",
+  "harness": {
+    "tools/benchmark.py": "fe5e7b802045e81dfe719c5cd5668cb29232cd1fc2afc93a4aa18c870e5a497a",
+    "tools/evaluate.py": "bcfe59896eaa9cdd70a1f4177b0a6c47c79421ddc153a056d7a532567390958c",
+    "tools/matrix.py": "5bd6bc9dd902c61964717efd1e815943b55331e7e76a3fced08ec0c60f9a8de2",
+    "vendor/Starter_Kit/engine.py": "e41da96ae56a682e02d88f8b384a4cc7e19a9b9f6d2916462478fa8e92fee119"
+  },
+  "manifest": "experiments/review-fixes-1109/seeds.json",
+  "manifest_sha256": "837cb839352727987b7e3cfdb1891d97fe8977da661bf4488a350c467e5d5fb8",
+  "split": "screen"
+}

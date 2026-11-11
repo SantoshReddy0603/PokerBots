@@ -1,0 +1,32 @@
+{
+  "stage": 1,
+  "wall_s": 23.439723020999992,
+  "seed": "learn-log-1109",
+  "played": 400,
+  "net": -626,
+  "delta": -400,
+  "points": 0,
+  "forfeits": {},
+  "bots": [
+    {
+      "path": "checkpoints/learning-v2.py",
+      "sha256": "87fbed6219ba7b92ce60ec0261a10f8d7d1c968ff8c6ec241d239680397897e1",
+      "notices": 0,
+      "bank_s": 13.610673675999607,
+      "startup_to_first_reply_ms": 413.0755200000067,
+      "diagnostics": 0,
+      "p99_ms": 58.56701999999814,
+      "max_ms": 76.62047900001312
+    },
+    {
+      "path": "experiments/friend-review/pokerbots-discard-holdem-main/bot.py",
+      "sha256": "0016b0f931f16c3cb414696cd90861d1c1673ef4dde66de4c02b33b071846886",
+      "notices": 0,
+      "bank_s": 12.302850247000293,
+      "startup_to_first_reply_ms": 448.6535450000133,
+      "diagnostics": 0,
+      "p99_ms": 51.335184000009804,
+      "max_ms": 80.541941000007
+    }
+  ]
+}

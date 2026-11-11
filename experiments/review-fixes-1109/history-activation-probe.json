@@ -1,0 +1,11 @@
+{
+  "counts": {
+    "hands": 3200,
+    "opponent_preflop_raises": 1187,
+    "reraise_disagreements": 0,
+    "postflop_own_raises": 1555,
+    "bet_bucket_disagreements": 39,
+    "bb_checks_after_limp": 187
+  },
+  "scope": "Public histories from five earlier instrumented replays; diagnostic, not the new match-selection matrices."
+}

@@ -1,0 +1,27 @@
+{
+  "screen_opponents": [
+    "current friend",
+    "old friend",
+    "trap",
+    "tightjam"
+  ],
+  "screen_matches_per_artifact": 32,
+  "screen_blocks": 2,
+  "candidates": [
+    "selective",
+    "response",
+    "combined"
+  ],
+  "confirmation_blocks": 4,
+  "confirmation_opponents": [
+    "current friend",
+    "old friend",
+    "trap",
+    "tightjam",
+    "range",
+    "polar"
+  ],
+  "confirmation_matches_per_artifact": 96,
+  "gate": "Advance highest match points only if above baseline in screen and no severe matchup regression. Promote only with fresh positive paired confirmation points, convincing block support, no serious regression, correctness and constrained exact-byte validation. Otherwise retain baseline.",
+  "note": "Neither source correctness nor more raw chips overrides match-point evidence."
+}

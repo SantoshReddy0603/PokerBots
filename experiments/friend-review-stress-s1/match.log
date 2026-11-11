@@ -1,0 +1,400 @@
+#1    button A | A: 4s 5h 4d  B: 5d 8s 8h | board - | preflop: Ar5 Bf | fold A +2, B -2
+#2    button B | B: 4s 5h 4d  A: 5d 8s 8h | board 6c 9s 9c Ad 7d | discards B:5h A:5d | preflop: Br6 Ac6 flop: Ax Br3 Ac3 turn: Ax Br4 Ac4 river: Ax Br6 Ac6 | showdown (B two pair, A two pair) B -19, A +19
+#3    button A | A: 6h Td 9h  B: 4d 7c 8h | board - | preflop: Ar5 Bf | fold A +2, B -2
+#4    button B | B: 6h Td 9h  A: 4d 7c 8h | board 2c 2s Kc Ac | discards B:6h A:4d | preflop: Br6 Ac6 flop: Ax Bx turn: Ax Br3 Af | fold B +6, A -6
+#5    button A | A: 4s 9s 3d  B: 7s 6h Kc | board 5c Qd 5h | preflop: Ar5 Bc5 flop: Bx Ar5 Bf | fold A +5, B -5
+#6    button B | B: 4s 9s 3d  A: 7s 6h Kc | board 5c Qd 5h | preflop: Br6 Ac6 flop: Ax Br3 Af | fold B +6, A -6
+#7    button A | A: 7s Qc 2c  B: Jh 3h Ad | board Qs 2h 8d | preflop: Ar5 Bc5 flop: Bx Ar8 Bf | fold A +5, B -5
+#8    button B | B: 7s Qc 2c  A: Jh 3h Ad | board Qs 2h 8d | preflop: Br6 Ac6 flop: Ax Br3 Af | fold B +6, A -6
+#9    button A | A: 3c 9c Jc  B: 3d Qs Ts | board Js Qd 2d 6s 5d | discards A:3c B:3d | preflop: Ar5 Bc5 flop: Br2 Ac2 turn: Br3 Ac3 river: Br5 Ac5 | showdown (A one pair, B one pair) A -15, B +15
+#10   button B | B: 3c 9c Jc  A: 3d Qs Ts | board Js Qd 2d 6s 5d | discards B:3c A:3d | preflop: Br6 Ac6 flop: Ar6 Bc6 turn: Ar13 Bc13 river: Ax Br12 Ac12 | showdown (B one pair, A one pair) B -37, A +37
+#11   button A | A: 9c 6s Kd  B: 7c 5h 7s | board - | preflop: Ar5 Bf | fold A +2, B -2
+#12   button B | B: 9c 6s Kd  A: 7c 5h 7s | board 2s 2h 6h 8h 8c | discards B:9c A:5h | preflop: Br6 Ac6 flop: Ax Br3 Ac3 turn: Ax Br4 Ac4 river: Ax Br6 Ac6 | showdown (B two pair, A two pair) B -19, A +19
+#13   button A | A: 9h Qh 2s  B: 5h 2h Js | board 4h Ac 3h Ad 5d | discards A:2s B:Js | preflop: Ar5 Bc5 flop: Br2 Ac2 turn: Br3 Ac3 river: Br5 Af | fold A -10, B +10
+#14   button B | B: 9h Qh 2s  A: 5h 2h Js | board 4h Ac 3h Ad 5d | discards B:2s A:Js | preflop: Br6 Ac6 flop: Ar10 Bc10 turn: Ar17 Bc17 river: Ar54 Bc54 | showdown (B one pair, A straight) B -87, A +87
+#15   button A | A: Ts 7c 3h  B: Kh 4s Ad | board - | preflop: Ar5 Br15 Af | fold A -5, B +5
+#16   button B | B: Ts 7c 3h  A: Kh 4s Ad | board 2h 3c 5s 9d 3s | discards B:7c A:Kh | preflop: Br6 Ac6 flop: Ar10 Bc10 turn: Ar26 Bc26 river: Ar69 Bc69 | showdown (B three of a kind, A straight) B -111, A +111
+#17   button A | A: 7d Js Jc  B: 5s Ad 6d | board 3h 6s 8c Jh 9d | discards A:7d B:5s | preflop: Ar5 Bc5 flop: Br2 Ac2 turn: Br3 Ar16 Bc16 river: Br11 Ar56 Bc56 | showdown (A three of a kind, B one pair) A +79, B -79
+#18   button B | B: 7d Js Jc  A: 5s Ad 6d | board 3h 6s 8c Jh 9d | discards B:7d A:5s | preflop: Br6 Ac6 flop: Ax Br3 Ac3 turn: Ax Br4 Ac4 river: Ax Br6 Af | fold B +13, A -13
+#19   button A | A: Jc Ah Qc  B: Kd 7d As | board Qs Qh 8c | preflop: Ar5 Br15 Ar45 Bc45 flop: Bx Ar74 Bf | fold A +45, B -45
+#20   button B | B: Jc Ah Qc  A: Kd 7d As | board Qs Qh 8c | preflop: Br6 Ac6 flop: Ax Br3 Af | fold B +6, A -6
+#21   button A | A: 4d Qd Qh  B: 4h 2c Qs | board As Ad Kd Ac 6d | discards A:Qh B:2c | preflop: Ar5 Bc5 flop: Br2 Ac2 turn: Br3 Ac3 river: Br5 Ac5 | showdown (A flush, B three of a kind) A +15, B -15
+#22   button B | B: 4d Qd Qh  A: 4h 2c Qs | board As Ad Kd | preflop: Br6 Ac6 flop: Ax Br3 Af | fold B +6, A -6
+#23   button A | A: As 3h 6s  B: 7h Ac 2c | board Jh 5s 4s Qd Qc | discards A:3h B:7h | preflop: Ar5 Bc5 flop: Br2 Ac2 turn: Bx Ax river: Br3 Af | fold A -7, B +7
+#24   button B | B: As 3h 6s  A: 7h Ac 2c | board Jh 5s 4s | preflop: Br6 Ac6 flop: Ax Br3 Af | fold B +6, A -6
+#25   button A | A: 9c 8h 7h  B: 5c Jd Kh | board 7c 6d 5d 4d 6c | discards A:7h B:Jd | preflop: Ar5 Bc5 flop: Br2 Ar11 Bc11 turn: Br8 Ac8 river: Br12 Ac12 | showdown (A straight, B two pair) A +36, B -36
+#26   button B | B: 9c 8h 7h  A: 5c Jd Kh | board 7c 6d 5d | preflop: Br6 Ac6 flop: Ax Br3 Af | fold B +6, A -6
+#27   button A | A: Ts 5c 6s  B: Jh 6d Qc | board 8h 2d Ad | preflop: Ar5 Bc5 flop: Br2 Af | fold A -5, B +5
+#28   button B | B: Ts 5c 6s  A: Jh 6d Qc | board 8h 2d Ad Ks | discards B:5c A:6d | preflop: Br6 Ac6 flop: Ax Bx turn: Ax Br3 Af | fold B +6, A -6
+#29   button A | A: 8h 4s 8c  B: 4d Kh 6d | board 8d 9c As | preflop: Ar5 Bc5 flop: Br2 Ar11 Bf | fold A +7, B -7
+#30   button B | B: 8h 4s 8c  A: 4d Kh 6d | board 8d 9c As | preflop: Br6 Ac6 flop: Ax Br3 Af | fold B +6, A -6
+#31   button A | A: Jd 5d Jh  B: Ks 3d Td | board 5s Qd 8h Ah Jc | discards A:5d B:3d | preflop: Ar5 Bc5 flop: Br2 Ac2 turn: Br3 Ac3 river: Br5 Ar25 Br68 Ac68 | showdown (A three of a kind, B straight) A -78, B +78
+#32   button B | B: Jd 5d Jh  A: Ks 3d Td | board 5s Qd 8h | preflop: Br6 Ac6 flop: Ax Br3 Af | fold B +6, A -6
+#33   button A | A: 6c Kd 2h  B: 8c Kh 9s | board Ac 9h 2d Ad | discards A:6c B:8c | preflop: Ar5 Bc5 flop: Br2 Ac2 turn: Br3 Af | fold A -7, B +7
+#34   button B | B: 6c Kd 2h  A: 8c Kh 9s | board Ac 9h 2d Ad 3d | discards B:6c A:8c | preflop: Br6 Ac6 flop: Ax Br3 Ac3 turn: Ax Br4 Ac4 river: Ax Br6 Ac6 | showdown (B two pair, A two pair) B -19, A +19
+#35   button A | A: Td 9s 3s  B: 4s Ac 3h | board 3d Js Ts 8c 5s | discards A:9s B:4s | preflop: Ar5 Bc5 flop: Br2 Ac2 turn: Br3 Ac3 river: Br5 Ac5 | showdown (A two pair, B one pair) A +15, B -15
+#36   button B | B: Td 9s 3s  A: 4s Ac 3h | board 3d Js Ts | preflop: Br6 Ac6 flop: Ax Br3 Af | fold B +6, A -6
+#37   button A | A: 6h 4h Js  B: 6d 4s 7h | board - | preflop: Ar5 Bf | fold A +2, B -2
+#38   button B | B: 6h 4h Js  A: 6d 4s 7h | board - | preflop: Br6 Af | fold B +2, A -2
+#39   button A | A: 8d 4c 4s  B: Tc Jd 9h | board As 7c Ts | preflop: Ar5 Bc5 flop: Br2 Af | fold A -5, B +5
+#40   button B | B: 8d 4c 4s  A: Tc Jd 9h | board As 7c Ts 8s | discards B:8d A:9h | preflop: Br6 Ac6 flop: Ax Br3 Ac3 turn: Ax Br4 Af | fold B +9, A -9
+#41   button A | A: 9d 4h Tc  B: 9s Ks 4c | board 4s Ad Jd 8s | discards A:Tc B:9s | preflop: Ar5 Bc5 flop: Br2 Ac2 turn: Br3 Af | fold A -7, B +7
+#42   button B | B: 9d 4h Tc  A: 9s Ks 4c | board 4s Ad Jd 8s | discards B:9d A:9s | preflop: Br6 Ac6 flop: Ax Br3 Ac3 turn: Ax Br4 Af | fold B +9, A -9
+#43   button A | A: 7c 5d 9h  B: Kd 5c 5h | board Th Qd Ts | preflop: Ar5 Bc5 flop: Br2 Af | fold A -5, B +5
+#44   button B | B: 7c 5d 9h  A: Kd 5c 5h | board Th Qd Ts | preflop: Br6 Ac6 flop: Ax Br3 Af | fold B +6, A -6
+#45   button A | A: 3c 5c 3s  B: Qs 8c 6h | board Kc Qd Ac 5h 2c | discards A:3s B:6h | preflop: Ar5 Bc5 flop: Br2 Ac2 turn: Br3 Ac3 river: Br5 Ar25 Bc25 | showdown (A flush, B one pair) A +35, B -35
+#46   button B | B: 3c 5c 3s  A: Qs 8c 6h | board Kc Qd Ac 5h | discards B:3s A:6h | preflop: Br6 Ac6 flop: Ax Br3 Ac3 turn: Ax Br4 Af | fold B +9, A -9
+#47   button A | A: Js 4c 7s  B: 5s Ah 3s | board 2d Qh Qd | preflop: Ar5 Bc5 flop: Br2 Af | fold A -5, B +5
+#48   button B | B: Js 4c 7s  A: 5s Ah 3s | board 2d Qh Qd Ks | discards B:4c A:3s | preflop: Br6 Ac6 flop: Ax Bx turn: Ax Br3 Af | fold B +6, A -6
+#49   button A | A: 7h Qh Kh  B: 2h Ah Jh | board 5s 5c Ts Ad | discards A:7h B:2h | preflop: Ar5 Bc5 flop: Br2 Ac2 turn: Br3 Af | fold A -7, B +7
+#50   button B | B: 7h Qh Kh  A: 2h Ah Jh | board 5s 5c Ts Ad 9s | discards B:7h A:2h | preflop: Br6 Ac6 flop: Ax Bx turn: Ar6 Bc6 river: Ar13 Bc13 | showdown (B one pair, A two pair) B -25, A +25
+#51   button A | A: 5h Jc 4s  B: 3c Ah 4c | board 3h Tc Td | preflop: Ar5 Bc5 flop: Br2 Af | fold A -5, B +5
+#52   button B | B: 5h Jc 4s  A: 3c Ah 4c | board 3h Tc Td 7d | discards B:4s A:4c | preflop: Br6 Ac6 flop: Ax Br3 Ac3 turn: Ax Br4 Af | fold B +9, A -9
+#53   button A | A: Ah 5s 7c  B: 4d 4c 6d | board - | preflop: Ar5 Bf | fold A +2, B -2
+#54   button B | B: Ah 5s 7c  A: 4d 4c 6d | board Th Kh Ts | preflop: Br6 Ac6 flop: Ax Br3 Af | fold B +6, A -6
+#55   button A | A: Tc Ah 4d  B: 5c Qc 2d | board Th Ad Kd | preflop: Ar5 Bc5 flop: Bx Ar5 Bf | fold A +5, B -5
+#56   button B | B: Tc Ah 4d  A: 5c Qc 2d | board Th Ad Kd | preflop: Br6 Ac6 flop: Ax Br3 Af | fold B +6, A -6
+#57   button A | A: 3h 2s Ks  B: 8h 7c 6d | board - | preflop: Ar5 Bf | fold A +2, B -2
+#58   button B | B: 3h 2s Ks  A: 8h 7c 6d | board Qd Kh Qc | preflop: Br6 Ac6 flop: Ax Br3 Af | fold B +6, A -6
+#59   button A | A: Kh 8d As  B: Qd 2c 9h | board Tc Kd 4h | preflop: Ar5 Bc5 flop: Bx Ar5 Bf | fold A +5, B -5
+#60   button B | B: Kh 8d As  A: Qd 2c 9h | board Tc Kd 4h | preflop: Br6 Ac6 flop: Ax Br3 Af | fold B +6, A -6
+#61   button A | A: 8c Qd Th  B: 7h 5h Qs | board 6d 2h 9d | preflop: Ar5 Bc5 flop: Br2 Af | fold A -5, B +5
+#62   button B | B: 8c Qd Th  A: 7h 5h Qs | board 6d 2h 9d Ts | discards B:Qd A:7h | preflop: Br6 Ac6 flop: Ax Bx turn: Ax Br3 Af | fold B +6, A -6
+#63   button A | A: 2s 5c 7s  B: 6s 5s 5h | board - | preflop: Ac2 Br6 Af | fold A -2, B +2
+#64   button B | B: 2s 5c 7s  A: 6s 5s 5h | board 2h 3c As 9c 7c | discards B:7s A:6s | preflop: Br6 Ac6 flop: Ar6 Bc6 turn: Ax Br6 Ac6 river: Ax Br9 Af | fold B +18, A -18
+#65   button A | A: 2c 4s Ah  B: 3c 7c Ks | board 5c 6h 6c | preflop: Ar5 Bc5 flop: Br2 Af | fold A -5, B +5
+#66   button B | B: 2c 4s Ah  A: 3c 7c Ks | board 5c 6h 6c 3h 7s | discards B:Ah A:Ks | preflop: Br6 Ac6 flop: Ax Bx turn: Ar6 Br21 Ac21 river: Ax Br13 Ac13 | showdown (B straight, A two pair) B +40, A -40
+#67   button A | A: Kc 3d 4h  B: Qh 5h 9s | board 4s 7s Ac 9h | discards A:Kc B:5h | preflop: Ar5 Bc5 flop: Br2 Ac2 turn: Br3 Af | fold A -7, B +7
+#68   button B | B: Kc 3d 4h  A: Qh 5h 9s | board 4s 7s Ac | preflop: Br6 Ac6 flop: Ax Br3 Af | fold B +6, A -6
+#69   button A | A: Kh 6d 6c  B: As Qs 2h | board 2c 7s 2d Ah | discards A:Kh B:Qs | preflop: Ar5 Br15 Ac15 flop: Br7 Ac7 turn: Br11 Af | fold A -22, B +22
+#70   button B | B: Kh 6d 6c  A: As Qs 2h | board 2c 7s 2d Ah 5c | discards B:Kh A:Qs | preflop: Br6 Ac6 flop: Ar10 Bc10 turn: Ar26 Bc26 river: Ar69 Bc69 | showdown (B two pair, A full house) B -111, A +111
+#71   button A | A: Ac 7d 9s  B: 5c Qh 6s | board Ah 6c 6d 2h Ts | discards A:7d B:5c | preflop: Ar5 Bc5 flop: Br2 Ac2 turn: Br3 Ac3 river: Br5 Ac5 | showdown (A two pair, B three of a kind) A -15, B +15
+#72   button B | B: Ac 7d 9s  A: 5c Qh 6s | board Ah 6c 6d 2h Ts | discards B:7d A:5c | preflop: Br6 Ac6 flop: Ar10 Bc10 turn: Ar26 Bc26 river: Ar69 Bc69 | showdown (B two pair, A three of a kind) B -111, A +111
+#73   button A | A: 3h 4d As  B: 2c 3c 9s | board - | preflop: Ar5 Bf | fold A +2, B -2
+#74   button B | B: 3h 4d As  A: 2c 3c 9s | board 8c 4c 2s 5c Kh | discards B:3h A:9s | preflop: Br6 Ac6 flop: Ar6 Bc6 turn: Ar20 Bc20 river: Ar52 Bc52 | showdown (B one pair, A flush) B -84, A +84
+#75   button A | A: 9d 3c 5d  B: 9s 3d 8s | board - | preflop: Ar5 Bf | fold A +2, B -2
+#76   button B | B: 9d 3c 5d  A: 9s 3d 8s | board 4c Ts 2s 8h 3s | discards B:9d A:3d | preflop: Br6 Ac6 flop: Ax Br3 Ac3 turn: Ax Br4 Ac4 river: Ar21 Bc21 | showdown (B one pair, A flush) B -34, A +34
+#77   button A | A: 2d Qh Ad  B: Tc 3c As | board 8h 7s 5h | preflop: Ar5 Bc5 flop: Bx Ar5 Bf | fold A +5, B -5
+#78   button B | B: 2d Qh Ad  A: Tc 3c As | board 8h 7s 5h | preflop: Br6 Ac6 flop: Ax Br3 Af | fold B +6, A -6
+#79   button A | A: Qc 8s 5h  B: 3s 9h 7d | board - | preflop: Ar5 Bf | fold A +2, B -2
+#80   button B | B: Qc 8s 5h  A: 3s 9h 7d | board 6c Qd 2d | preflop: Br6 Ac6 flop: Ax Br3 Af | fold B +6, A -6
+#81   button A | A: 6h Ks Ac  B: 7c 5d 9h | board - | preflop: Ar5 Bf | fold A +2, B -2
+#82   button B | B: 6h Ks Ac  A: 7c 5d 9h | board 4s 3c 9s 6c | discards B:6h A:7c | preflop: Br6 Ac6 flop: Ax Bx turn: Ar6 Bf | fold B -6, A +6
+#83   button A | A: 5s Qc 3h  B: Js 7h 6h | board 6s 7s 3c Kc | discards A:Qc B:Js | preflop: Ar5 Bc5 flop: Br2 Ac2 turn: Br3 Af | fold A -7, B +7
+#84   button B | B: 5s Qc 3h  A: Js 7h 6h | board 6s 7s 3c Kc Td | discards B:Qc A:Js | preflop: Br6 Ac6 flop: Ar6 Bc6 turn: Ar13 Bc13 river: Ar26 Bc26 | showdown (B one pair, A two pair) B -51, A +51
+#85   button A | A: 8h 9c Ac  B: 5s 9h 8d | board - | preflop: Ar5 Bf | fold A +2, B -2
+#86   button B | B: 8h 9c Ac  A: 5s 9h 8d | board Qc 6s Kc | preflop: Br6 Ac6 flop: Ax Br3 Af | fold B +6, A -6
+#87   button A | A: Kc 2c Ks  B: 2s 6c 5d | board - | preflop: Ar5 Bf | fold A +2, B -2
+#88   button B | B: Kc 2c Ks  A: 2s 6c 5d | board - | preflop: Br6 Af | fold B +2, A -2
+#89   button A | A: Ah 3d 9c  B: 3s 4s Th | board Ks 7h Qs | preflop: Ar5 Bc5 flop: Br2 Af | fold A -5, B +5
+#90   button B | B: Ah 3d 9c  A: 3s 4s Th | board Ks 7h Qs Qh | discards B:3d A:Th | preflop: Br6 Ac6 flop: Ax Br3 Ac3 turn: Ax Br4 Af | fold B +9, A -9
+#91   button A | A: 6h 4s 3h  B: Kh 8c Jh | board - | preflop: Ac2 Br6 Af | fold A -2, B +2
+#92   button B | B: 6h 4s 3h  A: Kh 8c Jh | board 3d 4d 9d | preflop: Br6 Ac6 flop: Ax Br3 Af | fold B +6, A -6
+#93   button A | A: 6h 5d 6s  B: 6d 3s Qc | board 7c Ks 5c Qd Jh | discards A:5d B:Qc | preflop: Ar5 Bc5 flop: Bx Ax turn: Br2 Ac2 river: Br3 Ac3 | showdown (A one pair, B high card) A +10, B -10
+#94   button B | B: 6h 5d 6s  A: 6d 3s Qc | board 7c Ks 5c | preflop: Br6 Ac6 flop: Ax Br3 Af | fold B +6, A -6
+#95   button A | A: Kh 9s 9h  B: 5h 4s Jh | board 5s 2d Jc 3h 2s | discards A:Kh B:4s | preflop: Ar5 Bc5 flop: Br2 Ac2 turn: Br3 Ac3 river: Br5 Ac5 | showdown (A two pair, B two pair) A -15, B +15
+#96   button B | B: Kh 9s 9h  A: 5h 4s Jh | board 5s 2d Jc 3h 2s | discards B:Kh A:4s | preflop: Br6 Ac6 flop: Ar10 Bc10 turn: Ar17 Bc17 river: Ar35 Bc35 | showdown (B two pair, A two pair) B -68, A +68
+#97   button A | A: Qh Ah 3s  B: 5d Th 5s | board Qs 4c 9c Jc | discards A:3s B:Th | preflop: Ar5 Bc5 flop: Br2 Ac2 turn: Br3 Af | fold A -7, B +7
+#98   button B | B: Qh Ah 3s  A: 5d Th 5s | board Qs 4c 9c | preflop: Br6 Ac6 flop: Ax Br3 Af | fold B +6, A -6
+#99   button A | A: 8d 3c 7c  B: 9c 2s 4c | board - | preflop: Ar5 Bf | fold A +2, B -2
+#100  button B | B: 8d 3c 7c  A: 9c 2s 4c | board 3s Ks Kc | preflop: Br6 Ac6 flop: Ax Br3 Af | fold B +6, A -6
+#101  button A | A: 3s 5s 9c  B: Kd Ks 6d | board - | preflop: Ar5 Br15 Af | fold A -5, B +5
+#102  button B | B: 3s 5s 9c  A: Kd Ks 6d | board - | preflop: Br6 Ar18 Bf | fold B -6, A +6
+#103  button A | A: Jd 7h 6c  B: Tc Js Qd | board 2s 3s 9h | preflop: Ar5 Bc5 flop: Br2 Af | fold A -5, B +5
+#104  button B | B: Jd 7h 6c  A: Tc Js Qd | board 2s 3s 9h Kc 4d | discards B:6c A:Tc | preflop: Br6 Ac6 flop: Ax Bx turn: Ax Bx river: Ax Bx | showdown (B high card, A high card) B -6, A +6
+#105  button A | A: 3s Kc 5s  B: 8d 3c 2h | board - | preflop: Ar5 Bf | fold A +2, B -2
+#106  button B | B: 3s Kc 5s  A: 8d 3c 2h | board - | preflop: Br6 Af | fold B +2, A -2
+#107  button A | A: Qc 3c Ks  B: 2d 7s 3s | board - | preflop: Ar5 Bf | fold A +2, B -2
+#108  button B | B: Qc 3c Ks  A: 2d 7s 3s | board - | preflop: Br6 Af | fold B +2, A -2
+#109  button A | A: 5h 2s 6c  B: Jc 7c 3s | board - | preflop: Ac2 Br6 Af | fold A -2, B +2
+#110  button B | B: 5h 2s 6c  A: Jc 7c 3s | board 2d 7s 9d Kd | discards B:5h A:Jc | preflop: Br6 Ac6 flop: Ax Br3 Ac3 turn: Ax Br4 Af | fold B +9, A -9
+#111  button A | A: 8h 4c Qs  B: 3c 5s 6d | board - | preflop: Ar5 Bf | fold A +2, B -2
+#112  button B | B: 8h 4c Qs  A: 3c 5s 6d | board - | preflop: Br6 Af | fold B +2, A -2
+#113  button A | A: 9h 4c 6s  B: 2h 7s Ad | board - | preflop: Ac2 Br6 Af | fold A -2, B +2
+#114  button B | B: 9h 4c 6s  A: 2h 7s Ad | board 8d Td Js | preflop: Br6 Ac6 flop: Ax Br3 Af | fold B +6, A -6
+#115  button A | A: 8c 4h Jh  B: 6d 4c 6s | board - | preflop: Ar5 Bf | fold A +2, B -2
+#116  button B | B: 8c 4h Jh  A: 6d 4c 6s | board As 4s Tc | preflop: Br6 Ac6 flop: Ax Br3 Af | fold B +6, A -6
+#117  button A | A: 9d 6d Ah  B: 5h 4d Ad | board Ac 7c Kd Jh 7d | discards A:6d B:4d | preflop: Ar5 Bc5 flop: Br2 Ac2 turn: Br3 Ac3 river: Br5 Ac5 | showdown (A two pair, B two pair) A +0, B +0
+#118  button B | B: 9d 6d Ah  A: 5h 4d Ad | board Ac 7c Kd Jh 7d | discards B:6d A:5h | preflop: Br6 Ac6 flop: Ar6 Bc6 turn: Ar13 Bc13 river: Ax Br12 Ac12 | showdown (B two pair, A two pair) B +0, A +0
+#119  button A | A: 4d Tc 6c  B: Ah 6h As | board - | preflop: Ar5 Br15 Af | fold A -5, B +5
+#120  button B | B: 4d Tc 6c  A: Ah 6h As | board 4c Ad 8s 8c Jh | discards B:6c A:6h | preflop: Br6 Ar18 Bc18 flop: Ar30 Bc30 turn: Ar79 Bc79 river: Ar73 Bc73 | showdown (B two pair, A full house) B -200, A +200
+#121  button A | A: 3c 5h 8s  B: Ah 4d 6d | board - | preflop: Ac2 Br6 Af | fold A -2, B +2
+#122  button B | B: 3c 5h 8s  A: Ah 4d 6d | board 9d 7s 5s | preflop: Br6 Ac6 flop: Ax Br3 Af | fold B +6, A -6
+#123  button A | A: Js 2c Ks  B: 6h Qd 6s | board 8s Qc Jc 3c | discards A:2c B:6h | preflop: Ar5 Bc5 flop: Br2 Ac2 turn: Br3 Af | fold A -7, B +7
+#124  button B | B: Js 2c Ks  A: 6h Qd 6s | board 8s Qc Jc 3c 4s | discards B:2c A:6h | preflop: Br6 Ac6 flop: Ax Br3 Ac3 turn: Ax Br4 Ac4 river: Ax Br6 Ac6 | showdown (B one pair, A one pair) B -19, A +19
+#125  button A | A: 3d 2h 7c  B: Qs 8h 6s | board - | preflop: Ac2 Br6 Af | fold A -2, B +2
+#126  button B | B: 3d 2h 7c  A: Qs 8h 6s | board Qd Jd 6h | preflop: Br6 Ac6 flop: Ar6 Bf | fold B -6, A +6
+#127  button A | A: 7d 3c 3d  B: Kd 4c Jc | board 7h 9h 5c Jd | discards A:3c B:4c | preflop: Ar5 Bc5 flop: Br2 Ac2 turn: Br3 Af | fold A -7, B +7
+#128  button B | B: 7d 3c 3d  A: Kd 4c Jc | board 7h 9h 5c | preflop: Br6 Ac6 flop: Ax Br3 Af | fold B +6, A -6
+#129  button A | A: 8c Kd 6h  B: 7d 4s Qs | board 9d 5c Qd 3s | discards A:Kd B:4s | preflop: Ar5 Bc5 flop: Br2 Ac2 turn: Br3 Af | fold A -7, B +7
+#130  button B | B: 8c Kd 6h  A: 7d 4s Qs | board 9d 5c Qd | preflop: Br6 Ac6 flop: Ar6 Bf | fold B -6, A +6
+#131  button A | A: Ts Js 2c  B: 6h Ad 7s | board 5d 8h 4s | preflop: Ar5 Bc5 flop: Br2 Af | fold A -5, B +5
+#132  button B | B: Ts Js 2c  A: 6h Ad 7s | board 5d 8h 4s | preflop: Br6 Ac6 flop: Ar10 Bf | fold B -6, A +6
+#133  button A | A: 3d Jh Kh  B: 8d Ah Ts | board Kc 6d 4c 4s 6c | discards A:3d B:8d | preflop: Ar5 Bc5 flop: Br2 Ac2 turn: Br3 Ac3 river: Br5 Ac5 | showdown (A two pair, B two pair) A +15, B -15
+#134  button B | B: 3d Jh Kh  A: 8d Ah Ts | board Kc 6d 4c | preflop: Br6 Ac6 flop: Ax Br3 Af | fold B +6, A -6
+#135  button A | A: 6h 7h Ad  B: Jc Ac Kd | board Ts Qc Td | preflop: Ar5 Br15 Ac15 flop: Br7 Af | fold A -15, B +15
+#136  button B | B: 6h 7h Ad  A: Jc Ac Kd | board Ts Qc Td Jd 5c | discards B:6h A:Jc | preflop: Br6 Ar18 Bc18 flop: Ax Br9 Ac9 turn: Ar44 Bc44 river: Ar129 Bc129 | showdown (B one pair, A straight) B -200, A +200
+#137  button A | A: 9h Qs Ac  B: 5s Jc Ad | board - | preflop: Af | fold A -1, B +1
+#138  button B | B: 9h Qs Ac  A: 5s Jc Ad | board - | preflop: Br6 Af | fold B +2, A -2
+#139  button A | A: 8h Kd 6c  B: 4d Ad 2s | board - | preflop: Af | fold A -1, B +1
+#140  button B | B: 8h Kd 6c  A: 4d Ad 2s | board - | preflop: Br6 Af | fold B +2, A -2
+#141  button A | A: Ad 4h 5d  B: Td Kh 5h | board - | preflop: Af | fold A -1, B +1
+#142  button B | B: Ad 4h 5d  A: Td Kh 5h | board - | preflop: Br6 Af | fold B +2, A -2
+#143  button A | A: Qc Ad Ks  B: 3s Tc 8h | board - | preflop: Af | fold A -1, B +1
+#144  button B | B: Qc Ad Ks  A: 3s Tc 8h | board - | preflop: Br6 Af | fold B +2, A -2
+#145  button A | A: 5h 3s 4h  B: 2s 7s Qc | board - | preflop: Af | fold A -1, B +1
+#146  button B | B: 5h 3s 4h  A: 2s 7s Qc | board - | preflop: Br6 Af | fold B +2, A -2
+#147  button A | A: 7c 2d 2c  B: As 4d Kc | board - | preflop: Af | fold A -1, B +1
+#148  button B | B: 7c 2d 2c  A: As 4d Kc | board - | preflop: Br6 Af | fold B +2, A -2
+#149  button A | A: 8c 8h Qh  B: Qd 3d 8s | board - | preflop: Af | fold A -1, B +1
+#150  button B | B: 8c 8h Qh  A: Qd 3d 8s | board - | preflop: Br6 Af | fold B +2, A -2
+#151  button A | A: Ks 8s 2c  B: 9c 8h Th | board - | preflop: Af | fold A -1, B +1
+#152  button B | B: Ks 8s 2c  A: 9c 8h Th | board - | preflop: Br6 Af | fold B +2, A -2
+#153  button A | A: 8c 3s 7d  B: 3h 2h As | board - | preflop: Af | fold A -1, B +1
+#154  button B | B: 8c 3s 7d  A: 3h 2h As | board - | preflop: Br6 Af | fold B +2, A -2
+#155  button A | A: 4d 5c As  B: 8s Qs 5h | board - | preflop: Af | fold A -1, B +1
+#156  button B | B: 4d 5c As  A: 8s Qs 5h | board - | preflop: Br6 Af | fold B +2, A -2
+#157  button A | A: Th Td 5c  B: Tc 4h 3d | board - | preflop: Af | fold A -1, B +1
+#158  button B | B: Th Td 5c  A: Tc 4h 3d | board - | preflop: Br6 Af | fold B +2, A -2
+#159  button A | A: Ad 6h 5h  B: 7d 4s 3c | board - | preflop: Af | fold A -1, B +1
+#160  button B | B: Ad 6h 5h  A: 7d 4s 3c | board - | preflop: Br6 Af | fold B +2, A -2
+#161  button A | A: 8s 8h 4s  B: Jc Jd Kh | board - | preflop: Af | fold A -1, B +1
+#162  button B | B: 8s 8h 4s  A: Jc Jd Kh | board - | preflop: Br6 Af | fold B +2, A -2
+#163  button A | A: 4d 3h Qc  B: 7d 4c As | board - | preflop: Af | fold A -1, B +1
+#164  button B | B: 4d 3h Qc  A: 7d 4c As | board - | preflop: Br6 Af | fold B +2, A -2
+#165  button A | A: 3h 8h 4c  B: 4h Tc 5c | board - | preflop: Af | fold A -1, B +1
+#166  button B | B: 3h 8h 4c  A: 4h Tc 5c | board - | preflop: Br6 Af | fold B +2, A -2
+#167  button A | A: 2h 3c 8s  B: Tc Ts Kd | board - | preflop: Af | fold A -1, B +1
+#168  button B | B: 2h 3c 8s  A: Tc Ts Kd | board - | preflop: Br6 Af | fold B +2, A -2
+#169  button A | A: 4s 2c Ks  B: Ah Qh 7s | board - | preflop: Af | fold A -1, B +1
+#170  button B | B: 4s 2c Ks  A: Ah Qh 7s | board - | preflop: Br6 Af | fold B +2, A -2
+#171  button A | A: 5h 6h Ad  B: 5c 3d Jh | board - | preflop: Af | fold A -1, B +1
+#172  button B | B: 5h 6h Ad  A: 5c 3d Jh | board - | preflop: Br6 Af | fold B +2, A -2
+#173  button A | A: 6h 3s Qh  B: 2s 8h 2c | board - | preflop: Af | fold A -1, B +1
+#174  button B | B: 6h 3s Qh  A: 2s 8h 2c | board - | preflop: Br6 Af | fold B +2, A -2
+#175  button A | A: 8c Td Qh  B: 3s Kd Ad | board - | preflop: Af | fold A -1, B +1
+#176  button B | B: 8c Td Qh  A: 3s Kd Ad | board - | preflop: Br6 Af | fold B +2, A -2
+#177  button A | A: Ah 4d 4h  B: 5h Kc 8s | board - | preflop: Af | fold A -1, B +1
+#178  button B | B: Ah 4d 4h  A: 5h Kc 8s | board - | preflop: Br6 Af | fold B +2, A -2
+#179  button A | A: 3c 6h 8c  B: Qs 2h 7c | board - | preflop: Af | fold A -1, B +1
+#180  button B | B: 3c 6h 8c  A: Qs 2h 7c | board - | preflop: Br6 Af | fold B +2, A -2
+#181  button A | A: 6d 5c Ad  B: Kd 9h 7h | board - | preflop: Af | fold A -1, B +1
+#182  button B | B: 6d 5c Ad  A: Kd 9h 7h | board - | preflop: Br6 Af | fold B +2, A -2
+#183  button A | A: Ts Qs 4c  B: 5s 7s 9c | board - | preflop: Af | fold A -1, B +1
+#184  button B | B: Ts Qs 4c  A: 5s 7s 9c | board - | preflop: Br6 Af | fold B +2, A -2
+#185  button A | A: Jd 4h 9s  B: 6d Th 2h | board - | preflop: Af | fold A -1, B +1
+#186  button B | B: Jd 4h 9s  A: 6d Th 2h | board - | preflop: Br6 Af | fold B +2, A -2
+#187  button A | A: 5d 4h Ks  B: Kh Th Kc | board - | preflop: Af | fold A -1, B +1
+#188  button B | B: 5d 4h Ks  A: Kh Th Kc | board - | preflop: Br6 Af | fold B +2, A -2
+#189  button A | A: 2c 8d 5c  B: Qd 5h 8c | board - | preflop: Af | fold A -1, B +1
+#190  button B | B: 2c 8d 5c  A: Qd 5h 8c | board - | preflop: Br6 Af | fold B +2, A -2
+#191  button A | A: 3h Jc 4h  B: 6h 6d Kh | board - | preflop: Af | fold A -1, B +1
+#192  button B | B: 3h Jc 4h  A: 6h 6d Kh | board - | preflop: Br6 Af | fold B +2, A -2
+#193  button A | A: 9h 4d 6c  B: Js 4h 4s | board - | preflop: Af | fold A -1, B +1
+#194  button B | B: 9h 4d 6c  A: Js 4h 4s | board - | preflop: Br6 Af | fold B +2, A -2
+#195  button A | A: 7d 8s Td  B: Kc 5d 3d | board - | preflop: Af | fold A -1, B +1
+#196  button B | B: 7d 8s Td  A: Kc 5d 3d | board - | preflop: Br6 Af | fold B +2, A -2
+#197  button A | A: 9s Ad Ac  B: 2s 7c Qd | board - | preflop: Af | fold A -1, B +1
+#198  button B | B: 9s Ad Ac  A: 2s 7c Qd | board - | preflop: Br6 Af | fold B +2, A -2
+#199  button A | A: 3s 6c Qs  B: Ah Td Qd | board - | preflop: Af | fold A -1, B +1
+#200  button B | B: 3s 6c Qs  A: Ah Td Qd | board - | preflop: Br6 Af | fold B +2, A -2
+#201  button A | A: 2h Th 3s  B: Tc Ac 9h | board - | preflop: Af | fold A -1, B +1
+#202  button B | B: 2h Th 3s  A: Tc Ac 9h | board - | preflop: Br6 Af | fold B +2, A -2
+#203  button A | A: 9h Js 6d  B: 5c 7d Td | board - | preflop: Af | fold A -1, B +1
+#204  button B | B: 9h Js 6d  A: 5c 7d Td | board - | preflop: Br6 Af | fold B +2, A -2
+#205  button A | A: 3d 7h Td  B: Js 9h 9d | board - | preflop: Af | fold A -1, B +1
+#206  button B | B: 3d 7h Td  A: Js 9h 9d | board - | preflop: Br6 Af | fold B +2, A -2
+#207  button A | A: 7h 9c 9h  B: Jh 6d Ks | board - | preflop: Af | fold A -1, B +1
+#208  button B | B: 7h 9c 9h  A: Jh 6d Ks | board - | preflop: Br6 Af | fold B +2, A -2
+#209  button A | A: 6h Qh 9c  B: 5s Ad 9d | board - | preflop: Af | fold A -1, B +1
+#210  button B | B: 6h Qh 9c  A: 5s Ad 9d | board - | preflop: Br6 Af | fold B +2, A -2
+#211  button A | A: Qc Ac Kc  B: Jh Ah 2c | board - | preflop: Af | fold A -1, B +1
+#212  button B | B: Qc Ac Kc  A: Jh Ah 2c | board - | preflop: Br6 Af | fold B +2, A -2
+#213  button A | A: 5c Ks Th  B: Jd 7c Jc | board - | preflop: Af | fold A -1, B +1
+#214  button B | B: 5c Ks Th  A: Jd 7c Jc | board - | preflop: Br6 Af | fold B +2, A -2
+#215  button A | A: Ts 9h 2d  B: Jd 7s Jc | board - | preflop: Af | fold A -1, B +1
+#216  button B | B: Ts 9h 2d  A: Jd 7s Jc | board - | preflop: Br6 Af | fold B +2, A -2
+#217  button A | A: 7d Jc Tc  B: 8c 5d 3d | board - | preflop: Af | fold A -1, B +1
+#218  button B | B: 7d Jc Tc  A: 8c 5d 3d | board - | preflop: Br6 Af | fold B +2, A -2
+#219  button A | A: 7d 2c 3h  B: 7h Qh 5s | board - | preflop: Af | fold A -1, B +1
+#220  button B | B: 7d 2c 3h  A: 7h Qh 5s | board - | preflop: Br6 Af | fold B +2, A -2
+#221  button A | A: Kc Js 5c  B: 8s Jh 4s | board - | preflop: Af | fold A -1, B +1
+#222  button B | B: Kc Js 5c  A: 8s Jh 4s | board - | preflop: Br6 Af | fold B +2, A -2
+#223  button A | A: 7c 8h 7d  B: 2c Ac 4s | board - | preflop: Af | fold A -1, B +1
+#224  button B | B: 7c 8h 7d  A: 2c Ac 4s | board - | preflop: Br6 Af | fold B +2, A -2
+#225  button A | A: Ts 2c Ad  B: Ah 5c Kh | board - | preflop: Af | fold A -1, B +1
+#226  button B | B: Ts 2c Ad  A: Ah 5c Kh | board - | preflop: Br6 Af | fold B +2, A -2
+#227  button A | A: Qc 5c As  B: 5h Ac Jd | board - | preflop: Af | fold A -1, B +1
+#228  button B | B: Qc 5c As  A: 5h Ac Jd | board - | preflop: Br6 Af | fold B +2, A -2
+#229  button A | A: Ah 6h 9s  B: 6c As Jc | board - | preflop: Af | fold A -1, B +1
+#230  button B | B: Ah 6h 9s  A: 6c As Jc | board - | preflop: Br6 Af | fold B +2, A -2
+#231  button A | A: 5h 8h 5s  B: 5d Jh 9c | board - | preflop: Af | fold A -1, B +1
+#232  button B | B: 5h 8h 5s  A: 5d Jh 9c | board - | preflop: Br6 Af | fold B +2, A -2
+#233  button A | A: 7s Qc 4h  B: Ts 6s 9d | board - | preflop: Af | fold A -1, B +1
+#234  button B | B: 7s Qc 4h  A: Ts 6s 9d | board - | preflop: Br6 Af | fold B +2, A -2
+#235  button A | A: Ad 6s 9h  B: 2d Th 2s | board - | preflop: Af | fold A -1, B +1
+#236  button B | B: Ad 6s 9h  A: 2d Th 2s | board - | preflop: Br6 Af | fold B +2, A -2
+#237  button A | A: 8h 8d Ts  B: 8s Js 4h | board - | preflop: Af | fold A -1, B +1
+#238  button B | B: 8h 8d Ts  A: 8s Js 4h | board - | preflop: Br6 Af | fold B +2, A -2
+#239  button A | A: 3h 3s 2d  B: Ks 3d 6h | board - | preflop: Af | fold A -1, B +1
+#240  button B | B: 3h 3s 2d  A: Ks 3d 6h | board - | preflop: Br6 Af | fold B +2, A -2
+#241  button A | A: Ts 4h 2h  B: Kd 3s 4d | board - | preflop: Af | fold A -1, B +1
+#242  button B | B: Ts 4h 2h  A: Kd 3s 4d | board - | preflop: Br6 Af | fold B +2, A -2
+#243  button A | A: 4d 4s Jc  B: 6d 3d 9d | board - | preflop: Af | fold A -1, B +1
+#244  button B | B: 4d 4s Jc  A: 6d 3d 9d | board - | preflop: Br6 Af | fold B +2, A -2
+#245  button A | A: Qs Kd 8h  B: 5d Js 7s | board - | preflop: Af | fold A -1, B +1
+#246  button B | B: Qs Kd 8h  A: 5d Js 7s | board - | preflop: Br6 Af | fold B +2, A -2
+#247  button A | A: 6h 6d 7d  B: 2c 4c Kh | board - | preflop: Af | fold A -1, B +1
+#248  button B | B: 6h 6d 7d  A: 2c 4c Kh | board - | preflop: Br6 Af | fold B +2, A -2
+#249  button A | A: 4h Jd Tc  B: 7c Th 7s | board - | preflop: Af | fold A -1, B +1
+#250  button B | B: 4h Jd Tc  A: 7c Th 7s | board - | preflop: Br6 Af | fold B +2, A -2
+#251  button A | A: Jc 3d Ah  B: 7h 9d 5c | board - | preflop: Af | fold A -1, B +1
+#252  button B | B: Jc 3d Ah  A: 7h 9d 5c | board - | preflop: Br6 Af | fold B +2, A -2
+#253  button A | A: 4d 2d Ks  B: Td Ac Kh | board - | preflop: Af | fold A -1, B +1
+#254  button B | B: 4d 2d Ks  A: Td Ac Kh | board - | preflop: Br6 Af | fold B +2, A -2
+#255  button A | A: 9s Jh 5c  B: 4c 9h 6s | board - | preflop: Af | fold A -1, B +1
+#256  button B | B: 9s Jh 5c  A: 4c 9h 6s | board - | preflop: Br6 Af | fold B +2, A -2
+#257  button A | A: Jd Kd 7s  B: 5s Qc Tc | board - | preflop: Af | fold A -1, B +1
+#258  button B | B: Jd Kd 7s  A: 5s Qc Tc | board - | preflop: Br6 Af | fold B +2, A -2
+#259  button A | A: 4h Ac Ah  B: 6h As 5c | board - | preflop: Af | fold A -1, B +1
+#260  button B | B: 4h Ac Ah  A: 6h As 5c | board - | preflop: Br6 Af | fold B +2, A -2
+#261  button A | A: Kd Ah 7c  B: 7d 5c Jc | board - | preflop: Af | fold A -1, B +1
+#262  button B | B: Kd Ah 7c  A: 7d 5c Jc | board - | preflop: Br6 Af | fold B +2, A -2
+#263  button A | A: 5d Ac 8s  B: Td Th 9c | board - | preflop: Af | fold A -1, B +1
+#264  button B | B: 5d Ac 8s  A: Td Th 9c | board - | preflop: Br6 Af | fold B +2, A -2
+#265  button A | A: 9d 3s 3c  B: 7h 8c Ts | board - | preflop: Af | fold A -1, B +1
+#266  button B | B: 9d 3s 3c  A: 7h 8c Ts | board - | preflop: Br6 Af | fold B +2, A -2
+#267  button A | A: Ah 3d 6c  B: Th 2c Qh | board - | preflop: Af | fold A -1, B +1
+#268  button B | B: Ah 3d 6c  A: Th 2c Qh | board - | preflop: Br6 Af | fold B +2, A -2
+#269  button A | A: 5d Th 5s  B: 6h 2h Qs | board - | preflop: Af | fold A -1, B +1
+#270  button B | B: 5d Th 5s  A: 6h 2h Qs | board - | preflop: Br6 Af | fold B +2, A -2
+#271  button A | A: 3c 9s 3s  B: Js 5c 7h | board - | preflop: Af | fold A -1, B +1
+#272  button B | B: 3c 9s 3s  A: Js 5c 7h | board - | preflop: Br6 Af | fold B +2, A -2
+#273  button A | A: 9h 3c Qc  B: 9s 6d Kc | board - | preflop: Af | fold A -1, B +1
+#274  button B | B: 9h 3c Qc  A: 9s 6d Kc | board - | preflop: Br6 Af | fold B +2, A -2
+#275  button A | A: 4s Qh 4c  B: 9s Js Ks | board - | preflop: Af | fold A -1, B +1
+#276  button B | B: 4s Qh 4c  A: 9s Js Ks | board - | preflop: Br6 Af | fold B +2, A -2
+#277  button A | A: Jc 6d Ah  B: Ts 2s 7c | board - | preflop: Af | fold A -1, B +1
+#278  button B | B: Jc 6d Ah  A: Ts 2s 7c | board - | preflop: Br6 Af | fold B +2, A -2
+#279  button A | A: Kd 3s 8s  B: Qd 9c 8h | board - | preflop: Af | fold A -1, B +1
+#280  button B | B: Kd 3s 8s  A: Qd 9c 8h | board - | preflop: Br6 Af | fold B +2, A -2
+#281  button A | A: Ac 7c 8d  B: Qs Jh 4s | board - | preflop: Af | fold A -1, B +1
+#282  button B | B: Ac 7c 8d  A: Qs Jh 4s | board - | preflop: Br6 Af | fold B +2, A -2
+#283  button A | A: As 2h 5h  B: Ad Ah 8c | board - | preflop: Af | fold A -1, B +1
+#284  button B | B: As 2h 5h  A: Ad Ah 8c | board - | preflop: Br6 Af | fold B +2, A -2
+#285  button A | A: Qh 5d 2h  B: 8h 2c 3c | board - | preflop: Af | fold A -1, B +1
+#286  button B | B: Qh 5d 2h  A: 8h 2c 3c | board - | preflop: Br6 Af | fold B +2, A -2
+#287  button A | A: 2d Jh 5d  B: 9s 9d Tc | board - | preflop: Af | fold A -1, B +1
+#288  button B | B: 2d Jh 5d  A: 9s 9d Tc | board - | preflop: Br6 Af | fold B +2, A -2
+#289  button A | A: 2s 3c 2h  B: Qs Qd 9h | board - | preflop: Af | fold A -1, B +1
+#290  button B | B: 2s 3c 2h  A: Qs Qd 9h | board - | preflop: Br6 Af | fold B +2, A -2
+#291  button A | A: 4c 5s Qh  B: Kc Tc Ks | board - | preflop: Af | fold A -1, B +1
+#292  button B | B: 4c 5s Qh  A: Kc Tc Ks | board - | preflop: Br6 Af | fold B +2, A -2
+#293  button A | A: 7s Jd 6d  B: 9c 9h Jh | board - | preflop: Af | fold A -1, B +1
+#294  button B | B: 7s Jd 6d  A: 9c 9h Jh | board - | preflop: Br6 Af | fold B +2, A -2
+#295  button A | A: 5d 8h 6d  B: 3h Jd As | board - | preflop: Af | fold A -1, B +1
+#296  button B | B: 5d 8h 6d  A: 3h Jd As | board - | preflop: Br6 Af | fold B +2, A -2
+#297  button A | A: 3c Ac Js  B: 5h 7d Ad | board - | preflop: Af | fold A -1, B +1
+#298  button B | B: 3c Ac Js  A: 5h 7d Ad | board - | preflop: Br6 Af | fold B +2, A -2
+#299  button A | A: 9h 4s 5h  B: 5s Kd Qs | board - | preflop: Af | fold A -1, B +1
+#300  button B | B: 9h 4s 5h  A: 5s Kd Qs | board - | preflop: Br6 Af | fold B +2, A -2
+#301  button A | A: 7h 9c 2s  B: 7s 7d Jh | board - | preflop: Af | fold A -1, B +1
+#302  button B | B: 7h 9c 2s  A: 7s 7d Jh | board - | preflop: Br6 Af | fold B +2, A -2
+#303  button A | A: 9h 7d Kd  B: 4d 3d 2h | board - | preflop: Af | fold A -1, B +1
+#304  button B | B: 9h 7d Kd  A: 4d 3d 2h | board - | preflop: Br6 Af | fold B +2, A -2
+#305  button A | A: Ah 6s Ts  B: 4d 4c As | board - | preflop: Af | fold A -1, B +1
+#306  button B | B: Ah 6s Ts  A: 4d 4c As | board - | preflop: Br6 Af | fold B +2, A -2
+#307  button A | A: Td 6c 4s  B: Jc Jh Qs | board - | preflop: Af | fold A -1, B +1
+#308  button B | B: Td 6c 4s  A: Jc Jh Qs | board - | preflop: Br6 Af | fold B +2, A -2
+#309  button A | A: 3s Th Ac  B: Td Tc 2d | board - | preflop: Af | fold A -1, B +1
+#310  button B | B: 3s Th Ac  A: Td Tc 2d | board - | preflop: Br6 Af | fold B +2, A -2
+#311  button A | A: 3h 6h Jh  B: Kc 8s 7c | board - | preflop: Af | fold A -1, B +1
+#312  button B | B: 3h 6h Jh  A: Kc 8s 7c | board - | preflop: Br6 Af | fold B +2, A -2
+#313  button A | A: 3d Th Ts  B: 7h 7s 9s | board - | preflop: Af | fold A -1, B +1
+#314  button B | B: 3d Th Ts  A: 7h 7s 9s | board - | preflop: Br6 Af | fold B +2, A -2
+#315  button A | A: 4h 9c Js  B: 7h 9d 4c | board - | preflop: Af | fold A -1, B +1
+#316  button B | B: 4h 9c Js  A: 7h 9d 4c | board - | preflop: Br6 Af | fold B +2, A -2
+#317  button A | A: 7d 6d Qc  B: 2h 4d Ad | board - | preflop: Af | fold A -1, B +1
+#318  button B | B: 7d 6d Qc  A: 2h 4d Ad | board - | preflop: Br6 Af | fold B +2, A -2
+#319  button A | A: Qh Jc Qd  B: 6s 7d Ac | board - | preflop: Af | fold A -1, B +1
+#320  button B | B: Qh Jc Qd  A: 6s 7d Ac | board - | preflop: Br6 Af | fold B +2, A -2
+#321  button A | A: Td Tc 4s  B: 2s 6d 5d | board - | preflop: Af | fold A -1, B +1
+#322  button B | B: Td Tc 4s  A: 2s 6d 5d | board - | preflop: Br6 Af | fold B +2, A -2
+#323  button A | A: As 9d Tc  B: 5c 4d 7s | board - | preflop: Af | fold A -1, B +1
+#324  button B | B: As 9d Tc  A: 5c 4d 7s | board - | preflop: Br6 Af | fold B +2, A -2
+#325  button A | A: 6s Ac 4d  B: 2d 8h 4s | board - | preflop: Af | fold A -1, B +1
+#326  button B | B: 6s Ac 4d  A: 2d 8h 4s | board - | preflop: Br6 Af | fold B +2, A -2
+#327  button A | A: 3d Ad Tc  B: 9d 3h 2h | board - | preflop: Af | fold A -1, B +1
+#328  button B | B: 3d Ad Tc  A: 9d 3h 2h | board - | preflop: Br6 Af | fold B +2, A -2
+#329  button A | A: 4c Qs Js  B: 8d 3c 6h | board - | preflop: Af | fold A -1, B +1
+#330  button B | B: 4c Qs Js  A: 8d 3c 6h | board - | preflop: Br6 Af | fold B +2, A -2
+#331  button A | A: 4h 7c 8h  B: 9d 4d Qh | board - | preflop: Af | fold A -1, B +1
+#332  button B | B: 4h 7c 8h  A: 9d 4d Qh | board - | preflop: Br6 Af | fold B +2, A -2
+#333  button A | A: 8s 2d Ac  B: Qc 2s 7h | board - | preflop: Af | fold A -1, B +1
+#334  button B | B: 8s 2d Ac  A: Qc 2s 7h | board - | preflop: Br6 Af | fold B +2, A -2
+#335  button A | A: 6h 8h Kh  B: Kc Ts 3h | board - | preflop: Af | fold A -1, B +1
+#336  button B | B: 6h 8h Kh  A: Kc Ts 3h | board - | preflop: Br6 Af | fold B +2, A -2
+#337  button A | A: 3c 3s Td  B: 5h 2c Th | board - | preflop: Af | fold A -1, B +1
+#338  button B | B: 3c 3s Td  A: 5h 2c Th | board - | preflop: Br6 Af | fold B +2, A -2
+#339  button A | A: Qs Js Ah  B: 4c 8h 3s | board - | preflop: Af | fold A -1, B +1
+#340  button B | B: Qs Js Ah  A: 4c 8h 3s | board - | preflop: Br6 Af | fold B +2, A -2
+#341  button A | A: 9s Qh 2c  B: 4d As Tc | board - | preflop: Af | fold A -1, B +1
+#342  button B | B: 9s Qh 2c  A: 4d As Tc | board - | preflop: Br6 Af | fold B +2, A -2
+#343  button A | A: Kh 6h Qd  B: 2c 3d 3s | board - | preflop: Af | fold A -1, B +1
+#344  button B | B: Kh 6h Qd  A: 2c 3d 3s | board - | preflop: Br6 Af | fold B +2, A -2
+#345  button A | A: 9c Kc 2d  B: Ac Jh 8c | board - | preflop: Af | fold A -1, B +1
+#346  button B | B: 9c Kc 2d  A: Ac Jh 8c | board - | preflop: Br6 Af | fold B +2, A -2
+#347  button A | A: 9c Ks 5d  B: Js 2s Ac | board - | preflop: Af | fold A -1, B +1
+#348  button B | B: 9c Ks 5d  A: Js 2s Ac | board - | preflop: Br6 Af | fold B +2, A -2
+#349  button A | A: 3s Ts Qs  B: Qd 4c 7h | board - | preflop: Af | fold A -1, B +1
+#350  button B | B: 3s Ts Qs  A: Qd 4c 7h | board - | preflop: Br6 Af | fold B +2, A -2
+#351  button A | A: As 9h 6c  B: 2d 2s 3d | board - | preflop: Af | fold A -1, B +1
+#352  button B | B: As 9h 6c  A: 2d 2s 3d | board - | preflop: Br6 Af | fold B +2, A -2
+#353  button A | A: Qh 6s 8s  B: 5d 2s Kh | board - | preflop: Af | fold A -1, B +1
+#354  button B | B: Qh 6s 8s  A: 5d 2s Kh | board - | preflop: Br6 Af | fold B +2, A -2
+#355  button A | A: 3s 8d 2h  B: 3d Ks 7c | board - | preflop: Af | fold A -1, B +1
+#356  button B | B: 3s 8d 2h  A: 3d Ks 7c | board - | preflop: Br6 Af | fold B +2, A -2
+#357  button A | A: 9s 7h Kd  B: Ad 4h Jh | board - | preflop: Af | fold A -1, B +1
+#358  button B | B: 9s 7h Kd  A: Ad 4h Jh | board - | preflop: Br6 Af | fold B +2, A -2
+#359  button A | A: Td 5s Th  B: Ks Js 3h | board - | preflop: Af | fold A -1, B +1
+#360  button B | B: Td 5s Th  A: Ks Js 3h | board - | preflop: Br6 Af | fold B +2, A -2
+#361  button A | A: Qc Js 2h  B: 6h 2s 4s | board - | preflop: Af | fold A -1, B +1
+#362  button B | B: Qc Js 2h  A: 6h 2s 4s | board - | preflop: Br6 Af | fold B +2, A -2
+#363  button A | A: 5s 8d 6c  B: 4d 4c Ks | board - | preflop: Af | fold A -1, B +1
+#364  button B | B: 5s 8d 6c  A: 4d 4c Ks | board - | preflop: Br6 Af | fold B +2, A -2
+#365  button A | A: 9c 2d 4s  B: Qs 9s 6h | board - | preflop: Af | fold A -1, B +1
+#366  button B | B: 9c 2d 4s  A: Qs 9s 6h | board - | preflop: Br6 Af | fold B +2, A -2
+#367  button A | A: 5c 3s 7s  B: Jc 3d Qh | board - | preflop: Af | fold A -1, B +1
+#368  button B | B: 5c 3s 7s  A: Jc 3d Qh | board - | preflop: Br6 Af | fold B +2, A -2
+#369  button A | A: 6h 8s 6d  B: 9d 4s 6c | board - | preflop: Af | fold A -1, B +1
+#370  button B | B: 6h 8s 6d  A: 9d 4s 6c | board - | preflop: Br6 Af | fold B +2, A -2
+#371  button A | A: 5d 7d Ad  B: Js 4h Tc | board - | preflop: Af | fold A -1, B +1
+#372  button B | B: 5d 7d Ad  A: Js 4h Tc | board - | preflop: Br6 Af | fold B +2, A -2
+#373  button A | A: 9s Js Qc  B: 4h 2d 6h | board - | preflop: Af | fold A -1, B +1
+#374  button B | B: 9s Js Qc  A: 4h 2d 6h | board - | preflop: Br6 Af | fold B +2, A -2
+#375  button A | A: 3d 8d Kc  B: Jh 4h Ad | board - | preflop: Af | fold A -1, B +1
+#376  button B | B: 3d 8d Kc  A: Jh 4h Ad | board - | preflop: Br6 Af | fold B +2, A -2
+#377  button A | A: 4h 9h 2s  B: Qs 5s Qh | board - | preflop: Af | fold A -1, B +1
+#378  button B | B: 4h 9h 2s  A: Qs 5s Qh | board - | preflop: Br6 Af | fold B +2, A -2
+#379  button A | A: Ts 9s 8d  B: 9h Js 4c | board - | preflop: Af | fold A -1, B +1
+#380  button B | B: Ts 9s 8d  A: 9h Js 4c | board - | preflop: Br6 Af | fold B +2, A -2
+#381  button A | A: Jc 5c Ts  B: Jd 2s 2d | board - | preflop: Af | fold A -1, B +1
+#382  button B | B: Jc 5c Ts  A: Jd 2s 2d | board - | preflop: Br6 Af | fold B +2, A -2
+#383  button A | A: 4d Ad 3c  B: 8d 5s 9c | board - | preflop: Af | fold A -1, B +1
+#384  button B | B: 4d Ad 3c  A: 8d 5s 9c | board - | preflop: Br6 Af | fold B +2, A -2
+#385  button A | A: Js 8h 7h  B: 7d 3h 4s | board - | preflop: Af | fold A -1, B +1
+#386  button B | B: Js 8h 7h  A: 7d 3h 4s | board - | preflop: Br6 Af | fold B +2, A -2
+#387  button A | A: 7c Jd Tc  B: 8d Qh Th | board - | preflop: Af | fold A -1, B +1
+#388  button B | B: 7c Jd Tc  A: 8d Qh Th | board - | preflop: Br6 Af | fold B +2, A -2
+#389  button A | A: 6h As Ks  B: 2d Td Qh | board - | preflop: Af | fold A -1, B +1
+#390  button B | B: 6h As Ks  A: 2d Td Qh | board - | preflop: Br6 Af | fold B +2, A -2
+#391  button A | A: 6s 4s 9d  B: Qc Jh 7c | board - | preflop: Af | fold A -1, B +1
+#392  button B | B: 6s 4s 9d  A: Qc Jh 7c | board - | preflop: Br6 Af | fold B +2, A -2
+#393  button A | A: 3c Qs 4d  B: Qc 8d 5s | board - | preflop: Af | fold A -1, B +1
+#394  button B | B: 3c Qs 4d  A: Qc 8d 5s | board - | preflop: Br6 Af | fold B +2, A -2
+#395  button A | A: 9s Ah 7h  B: 9c Js 7c | board - | preflop: Af | fold A -1, B +1
+#396  button B | B: 9s Ah 7h  A: 9c Js 7c | board - | preflop: Br6 Af | fold B +2, A -2
+#397  button A | A: 2h 4c 8h  B: Qs Ks Ac | board - | preflop: Af | fold A -1, B +1
+#398  button B | B: 2h 4c 8h  A: Qs Ks Ac | board - | preflop: Br6 Af | fold B +2, A -2
+#399  button A | A: Tc 4s 7c  B: Qh Qc 3d | board - | preflop: Af | fold A -1, B +1
+#400  button B | B: Tc 4s 7c  A: Qh Qc 3d | board - | preflop: Br6 Af | fold B +2, A -2

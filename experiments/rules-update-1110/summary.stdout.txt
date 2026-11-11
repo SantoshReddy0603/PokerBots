@@ -1,0 +1,104 @@
+{
+  "candidate": {
+    "wins": 13,
+    "draws": 0,
+    "losses": 3,
+    "by_opponent": {
+      "opponents/league/confirmation/trap.py": [
+        4,
+        0,
+        0
+      ],
+      "experiments/review-fixes-1109/tight_reraise.py": [
+        4,
+        0,
+        0
+      ],
+      "opponents/league/confirmation/pressure.py": [
+        4,
+        0,
+        0
+      ],
+      "experiments/friend-review/pokerbots-discard-holdem-main/bot.py": [
+        1,
+        0,
+        3
+      ]
+    },
+    "by_stage": {
+      "1": {
+        "wdl": [
+          6,
+          0,
+          2
+        ],
+        "max_leg_bank_s": 11.282045161999982,
+        "max_reply_ms": 71.9262839999999,
+        "notices": 0,
+        "diagnostics": 0
+      },
+      "2": {
+        "wdl": [
+          7,
+          0,
+          1
+        ],
+        "max_leg_bank_s": 37.71816502400007,
+        "max_reply_ms": 99.31646600000477,
+        "notices": 0,
+        "diagnostics": 0
+      }
+    }
+  },
+  "baseline": {
+    "wins": 15,
+    "draws": 0,
+    "losses": 1,
+    "by_opponent": {
+      "opponents/league/confirmation/trap.py": [
+        4,
+        0,
+        0
+      ],
+      "experiments/review-fixes-1109/tight_reraise.py": [
+        4,
+        0,
+        0
+      ],
+      "opponents/league/confirmation/pressure.py": [
+        4,
+        0,
+        0
+      ],
+      "experiments/friend-review/pokerbots-discard-holdem-main/bot.py": [
+        3,
+        0,
+        1
+      ]
+    },
+    "by_stage": {
+      "1": {
+        "wdl": [
+          8,
+          0,
+          0
+        ],
+        "max_leg_bank_s": 11.631170328999996,
+        "max_reply_ms": 89.00699700001269,
+        "notices": 0,
+        "diagnostics": 0
+      },
+      "2": {
+        "wdl": [
+          7,
+          0,
+          1
+        ],
+        "max_leg_bank_s": 37.5560214540005,
+        "max_reply_ms": 70.12711899999857,
+        "notices": 0,
+        "diagnostics": 0
+      }
+    }
+  }
+}

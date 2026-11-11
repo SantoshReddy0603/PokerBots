@@ -1,0 +1,30 @@
+{
+  "seeds": [
+    "loss1110-screen-0d556cf5c1a7a20b6239",
+    "loss1110-screen-1097872c4e9c0951152e"
+  ],
+  "candidate": "experiments/loss-improvement-1110/response.py",
+  "candidate_sha256": "b517e13570b24b3bb15d6648e28a952fb5c0299404c9be6bd742b31c90c83ed0",
+  "opponents": {
+    "experiments/requested-field-test-1110/friend.py": "89ca146619df53be4179b77be94dd0da6ca7262e57e76033fa7b117050c55cd0",
+    "experiments/friend-review/pokerbots-discard-holdem-main/bot.py": "0016b0f931f16c3cb414696cd90861d1c1673ef4dde66de4c02b33b071846886",
+    "opponents/league/confirmation/trap.py": "ef1763a2930d24a66201aeff6a4d30644ae1024a2ce8b7b6aad972b3f4872fca",
+    "opponents/league/confirmation/tightjam.py": "c368e0d85235eac5b9e65278326509b5390979474391ec7148a2226c26f7c3ee"
+  },
+  "python": "3.11.9 (main, Nov  4 2026, 00:53:34) [GCC 11.4.0]",
+  "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "jobs": 2,
+  "revision": "8bb00df877d7620bc32ba1ce594d565f11c898d9",
+  "clock": "official-per-leg-startup-grace-production-time-adaptive",
+  "policy_rng": "embedded in hashed bot sources",
+  "harness": {
+    "tools/benchmark_legs.py": "e4ba7fd517da3c1ca877fa167512c60a27da57ca25c2e4a00828beab38077dee",
+    "tools/evaluate.py": "d550a449ce978b1dc7b981dccea78f3a1b9fcd1b53db9b2ac1930f939bafbcb4",
+    "tools/matrix.py": "0c6f47b89368ef096a499d0543e742efec2c2d899565f62eb1ee17b7cc9e5c88",
+    "vendor/Starter_Kit_2026_11_10/engine.py": "f42c38fa30b44b55f3963e67f836134b49f5afbcf810e781f289d6458d826390"
+  },
+  "manifest": "experiments/loss-improvement-1110/seeds.json",
+  "manifest_sha256": "ac4115d0959ea1b1c92ccf1c132a1922de0472ce04996a8726ce422989d78c15",
+  "split": "screen",
+  "engine_format": "two-leg-2026-11-10"
+}

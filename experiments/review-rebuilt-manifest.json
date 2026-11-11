@@ -1,0 +1,21 @@
+{
+  "artifact": "dist/bot.py",
+  "bytes": 11875,
+  "sha256": "404af500d979b827d40bd34ff2aecb3c2545d203dd9c94ddc0be53a685c9e171",
+  "python": "3.11.9 (main, Nov  4 2026, 00:53:34) [GCC 11.4.0]",
+  "build": "python3.11 tools/build_submission.py",
+  "sources": [
+    "src/protocol.py",
+    "src/poker.py",
+    "src/policy.py"
+  ],
+  "provenance": "Original project policy and evaluator; protocol from supplied specification. Unmodified organizer engine used only as an external test oracle.",
+  "final_report": "experiments/m6-betting.jsonl",
+  "release_report": "experiments/release-linux.jsonl",
+  "fallback": {
+    "path": "checkpoints/discard.py",
+    "sha256": "e0d5119c012471f872f9be5acf03a829124170624ca4e556067422322ee0811f",
+    "report": "experiments/m3-matches.jsonl"
+  },
+  "status": "locally validated"
+}

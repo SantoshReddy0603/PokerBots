@@ -1,0 +1,46 @@
+COMMAND ['tests/review_findings.py', 'checkpoints/review-1109-bets.py']
+Size prediction/observation agree for 18 legal raise responses, calls, reraises and boundary cases
+EXIT 0
+COMMAND ['tests/review_findings.py', 'checkpoints/review-1109-reraises.py']
+Raise-to-4 / minimum-reraise-to-6 queries the public reraise model
+EXIT 0
+COMMAND ['tests/review_findings.py', 'checkpoints/review-1109-openings.py']
+Open/isolation counters and inference lookups agree, without a confidence penalty
+EXIT 0
+COMMAND ['tests/review_findings.py', 'checkpoints/review-1109-combined.py']
+Size prediction/observation agree for 18 legal raise responses, calls, reraises and boundary cases
+Raise-to-4 / minimum-reraise-to-6 queries the public reraise model
+Open/isolation counters and inference lookups agree, without a confidence penalty
+EXIT 0
+COMMAND ['tests/protocol.py', 'checkpoints/review-1109-combined.py']
+protocol subprocess fixtures passed
+EXIT 0
+COMMAND ['tests/selection.py', 'checkpoints/review-1109-combined.py']
+targeted rank and discard cases passed
+EXIT 0
+COMMAND ['tests/evaluator.py', 'checkpoints/review-1109-combined.py']
+24000 oracle and suit checks, 117,472 evaluations/s
+EXIT 0
+COMMAND ['tests/learning.py', 'checkpoints/review-1109-combined.py']
+15,000 scalar/vector ranks, 2,000 flop features, exact river oracle, suit/future isolation and learning invariants passed
+EXIT 0
+COMMAND ['tests/review_decisions.py', 'checkpoints/review-1109-combined.py']
+2s 2h 2d uniform independent 0.3345 table (322, 254)
+As Ah Kd uniform independent 0.8041 table (829, 834)
+As Kh Qd uniform independent 0.641 table (622, 573)
+As Ks 5s uniform independent 0.6212 table (569, 526)
+Ks Kh 2s uniform independent 0.7738 table (767, 681)
+review decision fixtures passed
+EXIT 0
+COMMAND ['tests/review_ranges.py', 'checkpoints/review-1109-combined.py']
+history, information boundary and river fixtures passed
+EXIT 0
+COMMAND ['tests/review_lock.py', 'checkpoints/review-1109-combined.py']
+isolated capped-lead transcript passed
+EXIT 0
+COMMAND ['tests/review_matrix.py']
+complete, missing, duplicate, scoring and assignment matrix fixtures passed
+EXIT 0
+COMMAND ['tests/review_league.py']
+18 independent league artifacts exercised on all streets
+EXIT 0

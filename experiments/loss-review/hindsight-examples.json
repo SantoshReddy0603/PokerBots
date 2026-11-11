@@ -1,0 +1,23 @@
+[
+  {
+    "hero": "Kh Ah",
+    "villain": "Ad 2c",
+    "board": "As Qs 2h",
+    "known_holding_equity": 0.3477297895902547,
+    "runouts": 903
+  },
+  {
+    "hero": "Kd Jh",
+    "villain": "5h 5c",
+    "board": "Jc 5d 9d",
+    "known_holding_equity": 0.07751937984496124,
+    "runouts": 903
+  },
+  {
+    "hero": "Ad As",
+    "villain": "6c 2c",
+    "board": "9d Kc 2h 7c",
+    "known_holding_equity": 0.6904761904761905,
+    "runouts": 42
+  }
+]

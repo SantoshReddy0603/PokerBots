@@ -1,0 +1,411 @@
+{
+  "groups": {
+    "flop|nonterminal": {
+      "calls": 99,
+      "mean_estimated": 0.511576959497222,
+      "mean_known_holding": 0.27969059364408216,
+      "total_call": 6809
+    },
+    "turn|terminal": {
+      "calls": 185,
+      "mean_estimated": 0.5296198201996337,
+      "mean_known_holding": 0.31731016731016765,
+      "total_call": 19963
+    },
+    "river|terminal": {
+      "calls": 241,
+      "mean_estimated": 0.48994816442163136,
+      "mean_known_holding": 0.38589211618257263,
+      "total_call": 18500
+    },
+    "flop|terminal": {
+      "calls": 167,
+      "mean_estimated": 0.5745464867608476,
+      "mean_known_holding": 0.3586348896890604,
+      "total_call": 20734
+    },
+    "turn|nonterminal": {
+      "calls": 77,
+      "mean_estimated": 0.4505527205655357,
+      "mean_known_holding": 0.4035250463821891,
+      "total_call": 3541
+    }
+  },
+  "examples": [
+    {
+      "folder": "s1-requested1110-358f9e9d79bdabf213522d63-r0",
+      "hand": 15,
+      "street": "flop",
+      "hero": [
+        "3s",
+        "Qc"
+      ],
+      "opponent": [
+        "6d",
+        "Qs"
+      ],
+      "visible_board": [
+        "6h",
+        "2d",
+        "Qd"
+      ],
+      "call": 39,
+      "pot": 65,
+      "estimated": 0.5712103201297294,
+      "known_holding_equity": 0.039313399778516056,
+      "net": -200,
+      "terminal": false
+    },
+    {
+      "folder": "s1-requested1110-358f9e9d79bdabf213522d63-r0",
+      "hand": 102,
+      "street": "turn",
+      "hero": [
+        "Ad",
+        "Ah"
+      ],
+      "opponent": [
+        "5s",
+        "As"
+      ],
+      "visible_board": [
+        "3s",
+        "Ks",
+        "4d",
+        "7s"
+      ],
+      "call": 158,
+      "pot": 242,
+      "estimated": 0.5103299728589372,
+      "known_holding_equity": 0.0,
+      "net": -200,
+      "terminal": true
+    },
+    {
+      "folder": "s1-requested1110-358f9e9d79bdabf213522d63-r0",
+      "hand": 126,
+      "street": "turn",
+      "hero": [
+        "Kd",
+        "5h"
+      ],
+      "opponent": [
+        "Kc",
+        "2d"
+      ],
+      "visible_board": [
+        "Kh",
+        "9d",
+        "7c",
+        "2c"
+      ],
+      "call": 158,
+      "pot": 242,
+      "estimated": 0.5364239391203693,
+      "known_holding_equity": 0.14285714285714285,
+      "net": -200,
+      "terminal": true
+    },
+    {
+      "folder": "s1-requested1110-358f9e9d79bdabf213522d63-r0",
+      "hand": 138,
+      "street": "flop",
+      "hero": [
+        "Ac",
+        "As"
+      ],
+      "opponent": [
+        "4c",
+        "Qs"
+      ],
+      "visible_board": [
+        "2s",
+        "4h",
+        "4d"
+      ],
+      "call": 152,
+      "pot": 248,
+      "estimated": 0.6793049210182417,
+      "known_holding_equity": 0.10299003322259136,
+      "net": -200,
+      "terminal": true
+    },
+    {
+      "folder": "s1-requested1110-358f9e9d79bdabf213522d63-r0",
+      "hand": 160,
+      "street": "river",
+      "hero": [
+        "2s",
+        "8s"
+      ],
+      "opponent": [
+        "3h",
+        "Qs"
+      ],
+      "visible_board": [
+        "Qd",
+        "8d",
+        "2h",
+        "Kc",
+        "Qh"
+      ],
+      "call": 149,
+      "pot": 251,
+      "estimated": 0.5897510615947528,
+      "known_holding_equity": 0.0,
+      "net": -200,
+      "terminal": true
+    },
+    {
+      "folder": "s1-requested1110-358f9e9d79bdabf213522d63-r0",
+      "hand": 200,
+      "street": "river",
+      "hero": [
+        "4s",
+        "Tc"
+      ],
+      "opponent": [
+        "9s",
+        "8s"
+      ],
+      "visible_board": [
+        "Kc",
+        "Qs",
+        "6h",
+        "As",
+        "Js"
+      ],
+      "call": 136,
+      "pot": 264,
+      "estimated": 0.7188425160623892,
+      "known_holding_equity": 0.0,
+      "net": -200,
+      "terminal": true
+    },
+    {
+      "folder": "s1-requested1110-358f9e9d79bdabf213522d63-r0",
+      "hand": 9,
+      "street": "flop",
+      "hero": [
+        "7d",
+        "6c"
+      ],
+      "opponent": [
+        "Qd",
+        "7c"
+      ],
+      "visible_board": [
+        "Qs",
+        "7h",
+        "6d"
+      ],
+      "call": 136,
+      "pot": 264,
+      "estimated": 0.6305413629044452,
+      "known_holding_equity": 0.08527131782945736,
+      "net": -200,
+      "terminal": true
+    },
+    {
+      "folder": "s1-requested1110-358f9e9d79bdabf213522d63-r0",
+      "hand": 128,
+      "street": "turn",
+      "hero": [
+        "Jc",
+        "Qh"
+      ],
+      "opponent": [
+        "Qs",
+        "As"
+      ],
+      "visible_board": [
+        "7c",
+        "Qd",
+        "3c",
+        "5d"
+      ],
+      "call": 149,
+      "pot": 251,
+      "estimated": 0.6835672500155886,
+      "known_holding_equity": 0.07142857142857142,
+      "net": -200,
+      "terminal": true
+    },
+    {
+      "folder": "s1-requested1110-358f9e9d79bdabf213522d63-r1",
+      "hand": 9,
+      "street": "flop",
+      "hero": [
+        "7d",
+        "6c"
+      ],
+      "opponent": [
+        "Qd",
+        "7c"
+      ],
+      "visible_board": [
+        "Qs",
+        "7h",
+        "6d"
+      ],
+      "call": 136,
+      "pot": 264,
+      "estimated": 0.636016128993715,
+      "known_holding_equity": 0.08527131782945736,
+      "net": -200,
+      "terminal": true
+    },
+    {
+      "folder": "s1-requested1110-358f9e9d79bdabf213522d63-r1",
+      "hand": 170,
+      "street": "turn",
+      "hero": [
+        "5h",
+        "6d"
+      ],
+      "opponent": [
+        "As",
+        "2s"
+      ],
+      "visible_board": [
+        "4s",
+        "Td",
+        "3s",
+        "5c"
+      ],
+      "call": 51,
+      "pot": 85,
+      "estimated": 0.47243965452091563,
+      "known_holding_equity": 0.11904761904761904,
+      "net": -200,
+      "terminal": false
+    },
+    {
+      "folder": "s1-requested1110-358f9e9d79bdabf213522d63-r1",
+      "hand": 15,
+      "street": "flop",
+      "hero": [
+        "5h",
+        "Qc"
+      ],
+      "opponent": [
+        "6d",
+        "Qs"
+      ],
+      "visible_board": [
+        "6h",
+        "2d",
+        "Qd"
+      ],
+      "call": 30,
+      "pot": 50,
+      "estimated": 0.5455676367823686,
+      "known_holding_equity": 0.03820598006644518,
+      "net": -200,
+      "terminal": false
+    },
+    {
+      "folder": "s1-requested1110-358f9e9d79bdabf213522d63-r1",
+      "hand": 15,
+      "street": "turn",
+      "hero": [
+        "5h",
+        "Qc"
+      ],
+      "opponent": [
+        "6d",
+        "Qs"
+      ],
+      "visible_board": [
+        "6h",
+        "2d",
+        "Qd",
+        "8c"
+      ],
+      "call": 132,
+      "pot": 268,
+      "estimated": 0.4291178084675018,
+      "known_holding_equity": 0.03571428571428571,
+      "net": -200,
+      "terminal": true
+    }
+  ],
+  "badbeat_examples": [
+    {
+      "folder": "s1-requested1110-358f9e9d79bdabf213522d63-r0",
+      "hand": 65,
+      "hero": [
+        "Qs",
+        "9s"
+      ],
+      "opponent": [
+        "7d",
+        "7c"
+      ],
+      "visible_board": [
+        "9h",
+        "7h",
+        "8c",
+        "Qc"
+      ],
+      "estimated": 0.31173008871540925,
+      "known_holding_equity": 0.09523809523809523,
+      "cost": 32,
+      "pot": 368,
+      "net": -200
+    },
+    {
+      "folder": "s1-requested1110-358f9e9d79bdabf213522d63-r0",
+      "hand": 172,
+      "hero": [
+        "Kh",
+        "Tc"
+      ],
+      "opponent": [
+        "9c",
+        "5c"
+      ],
+      "visible_board": [
+        "Kc",
+        "6c",
+        "3c",
+        "7d"
+      ],
+      "estimated": 0.1884328567721044,
+      "known_holding_equity": 0.16666666666666666,
+      "cost": 32,
+      "pot": 368,
+      "net": -200
+    },
+    {
+      "folder": "s1-requested1110-61572b44e3527b8edc66b5e9-r1",
+      "hand": 55,
+      "hero": [
+        "9h",
+        "Jh"
+      ],
+      "opponent": [
+        "Ks",
+        "7h"
+      ],
+      "visible_board": [
+        "6h",
+        "4h",
+        "2c",
+        "7d"
+      ],
+      "estimated": 0.23545102112227298,
+      "known_holding_equity": 0.3333333333333333,
+      "cost": 56,
+      "pot": 344,
+      "net": -200
+    }
+  ],
+  "terminal_turn_classification": {
+    "calls": 185,
+    "negative_holding_ev": 109,
+    "positive_holding_ev": 76,
+    "lost_despite_positive_holding_ev": 20
+  },
+  "note": "Conditional on eventually shown holdings and actual retained pairs/discards. Selection bias; not an unbiased opponent-range equity estimate or a causal accounting of losses."
+}

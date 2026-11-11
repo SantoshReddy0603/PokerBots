@@ -1,0 +1,29 @@
+{
+  "seeds": [
+    "improved-peer-1110-1c51e7c6535a50a32af7dd5c",
+    "improved-peer-1110-1ded74dee7b8c053bdc79b18",
+    "improved-peer-1110-8b493c68481225534a0aa89d",
+    "improved-peer-1110-0bdc9de50120b194b68e3c6d"
+  ],
+  "candidate": "experiments/improved-teammate-match-1110/ours.py",
+  "candidate_sha256": "c264cb8a9e914a210be622d39751aa9ef45e9b9b717b1ef9281e069438e3a39a",
+  "opponents": {
+    "experiments/improved-teammate-match-1110/teammate.py": "35046e2fc6b3e4f52d9356779ca15db8bcd6cfd39b7e799978bac3163c260e64"
+  },
+  "python": "3.11.9 (main, Nov  4 2026, 00:53:34) [GCC 11.4.0]",
+  "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "jobs": 2,
+  "revision": "8bb00df877d7620bc32ba1ce594d565f11c898d9",
+  "clock": "official-per-leg-startup-grace-production-time-adaptive",
+  "policy_rng": "embedded in hashed bot sources",
+  "harness": {
+    "tools/benchmark_legs.py": "e4ba7fd517da3c1ca877fa167512c60a27da57ca25c2e4a00828beab38077dee",
+    "tools/evaluate.py": "d550a449ce978b1dc7b981dccea78f3a1b9fcd1b53db9b2ac1930f939bafbcb4",
+    "tools/matrix.py": "0c6f47b89368ef096a499d0543e742efec2c2d899565f62eb1ee17b7cc9e5c88",
+    "vendor/Starter_Kit_2026_11_10/engine.py": "f42c38fa30b44b55f3963e67f836134b49f5afbcf810e781f289d6458d826390"
+  },
+  "manifest": "experiments/improved-teammate-match-1110/seeds.json",
+  "manifest_sha256": "75ff5b7fea3e3e0467f5aa587df1a979fd39f2e293b2eb516b11eea744a0bd14",
+  "split": "confirmation",
+  "engine_format": "two-leg-2026-11-10"
+}
