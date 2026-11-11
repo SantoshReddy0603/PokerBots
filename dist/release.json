@@ -1,7 +1,7 @@
 {
   "artifact": "dist/bot.py",
   "bytes": 77217,
-  "sha256": "c264cb8a9e914a210be622d39751aa9ef45e9b9b717b1ef9281e069438e3a39a",
+  "sha256": "9450af9b03b460022409bc509b6b786a1c4ee0cd839bf4a37158c76ab633359b",
   "python": "3.11.9 (main, Nov  4 2026, 00:53:34) [GCC 11.4.0]",
   "build": "python3.11 tools/build_submission.py",
   "sources": [
@@ -16,7 +16,7 @@
   ],
   "provenance": "Independently implemented leg-local frequency model, base-15 NumPy histogram evaluator and continuing-range policy built on this project's original scalar evaluator and equity table. Teammate code used only as an external opponent; unchanged organizer engine used as test oracle.",
   "numpy": "optional; NumPy 2.2.6 full Linux checks and no-site-packages (-S) official-leg protocol fixtures passed",
-  "validation_note": "Selective postflop aggression ranges: weak-hand likelihood floor scales with learned large-bet/reraise frequency; ordinary/frequent aggression, preflop policy and evaluator are unchanged. Fresh four-block confirmation selected 86/96 wins versus prior 76/96; both assignments/stages, six declared opponent snapshots. Supplementary pressure/switch/champion test selected 24/24, including 8/8 head-to-head. Exact candidate passed one-CPU/1-GiB Linux current-format resource tests and correctness/protocol/audit checks. Finite local evidence does not guarantee no true regression. See experiments/loss-improvement-1110/RESULTS.md.",
+  "validation_note": "Wider preflop open/isolation thresholds (button .42->.38, big blind .58->.55). Fresh held-out 320-match confirmation vs two external bots: 66.2% vs 48.1% for the prior release, paired chip delta +234 (block-bootstrap 95% [115,346]); six synthetic profiles 120/120 unchanged. Finite local evidence; see experiments/field-comparison-1111/.",
   "source_sha256": {
     "src/learning_protocol.py": "7eee42d8ddf7b49f3fe688a258ad2534a12d02459e1170f0173c295d3344d945",
     "src/poker.py": "d80d6d889cf86931f0fe5ef2253f4bd1f180791113f15603350b81097c00adcb",
@@ -25,14 +25,14 @@
     "src/friend_ranges.py": "b4181ef2d84f3abca89a5ca24a24e67dc2533e60eb764162fb417a9d23ba1104",
     "src/learning.py": "1d540159557f8bed697cab0e34360256890caea3824163cb8593070bba895be7",
     "src/selective_equity.py": "484adbdda3faf4fb966bd045673aaf09b2e3f98e40ab34d8806bbca591e5e2ed",
-    "src/learning_policy.py": "f20358795432bcf8098c75a3a40f3fc7fe7a6ea3dd5cebe69700209cfcfb93a0"
+    "src/learning_policy.py": "89a2c47b0b0488856c3ffdec2a0e0b543b1218a3b74346a6ed1b13c2f65c0449"
   },
   "final_report": "experiments/loss-improvement-1110/confirmation-selective.jsonl",
   "release_report": "experiments/loss-improvement-1110/selective-stress.jsonl",
   "fallback": {
-    "path": "checkpoints/pre-selective-1110.py",
-    "sha256": "bb86e3e7dafd4019157bf9f24cee640e4c9dfbb276883dd92fee1585a03a1990",
-    "report": "experiments/loss-improvement-1110/confirmation-baseline.jsonl"
+    "path": "checkpoints/pre-pfwide-1111.py",
+    "sha256": "c264cb8a9e914a210be622d39751aa9ef45e9b9b717b1ef9281e069438e3a39a",
+    "report": "experiments/field-comparison-1111/"
   },
   "status": "locally validated",
   "engine_format": "two-leg-2026-11-10",

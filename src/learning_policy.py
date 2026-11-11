@@ -81,7 +81,7 @@ def betting_action(state, req):
                 return ("raise", req["max_raise"])
             return ("call",)
         if "raise" in legal:
-            if req["opp_bet"] <= 2 and equity >= (.42 if button else .58):
+            if req["opp_bet"] <= 2 and equity >= (.38 if button else .55):
                 return ("raise", 5 if button else 7)
             if req["opp_bet"] > 2 and equity >= .60 + .001 * call:
                 return ("raise", max(3 * req["opp_bet"], 12))
