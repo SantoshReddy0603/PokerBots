@@ -12,6 +12,17 @@ def estimate(state, req, hole, board, dead, samples):
         values, weights, outcomes, strengths = vector_estimate(hole, board, dead, events, state.model, samples, True)
         state.posterior = weights, outcomes[max(range(len(values)), key=values.__getitem__)], strengths
         return values
+    if np is None and req["time_left_ms"] > max(2000, 12 * (state.total - req["hand_id"] + 1)):
+        remaining = max(1, state.total - req["hand_id"] + 1)
+        target = .12 * req["time_left_ms"] / remaining
+        cost = getattr(state, "sample_ms", .12)
+        count = int(max(48, min(384, target / cost)))
+        start = perf_counter()
+        values, weights, outcomes, strengths = pure_estimate(hole, board, dead, events, state.model, count)
+        spent = 1000 * (perf_counter() - start) / count
+        state.sample_ms = .7 * cost + .3 * spent
+        state.posterior = weights, outcomes[max(range(len(values)), key=values.__getitem__)], strengths
+        return values
     return modeled_equity(hole, board, dead, events, 144, perf_counter() + budget(state, req), RNG)
 
 def choose_discard(state, req, hole):
@@ -140,7 +151,8 @@ def posterior_action(state, req, equity):
         choices[("call",)] = realize * equity * (pot + call) - call
     if "raise" in legal:
         weights, outcomes, strength = state.posterior
-        percentile = weighted_position(strength, weights)
+        plain = np is None
+        percentile = plain_position(strength, weights) if plain else weighted_position(strength, weights)
         targets = {max(req["min_raise"], min(req["max_raise"], other + round((pot + call) * fraction)))
                    for fraction in (.35, .70, 1.10)}
         if equity > .75 and min(req["my_stack"], req["opp_stack"] + call) < 2 * (pot + call):
@@ -150,14 +162,21 @@ def posterior_action(state, req, equity):
             cost = target - mine
             reply = min(req["opp_stack"], target - other)
             ratio = cost / max(1, pot + call)
-            prior = float(np.clip(base_fold + .15 * (ratio - .5), .06, .85))
+            prior = min(.85, max(.06, base_fold + .15 * (ratio - .5)))
             fold = state.model.rate(("postflop", "fold_small" if ratio < .6 else "fold_large"), prior)
             if call:
                 fold *= .55
-            willingness = .10 + .90 * np.clip((percentile - fold) / .25 + .5, 0., 1.)
-            continuing = weights * willingness
-            fold = 1 - continuing.sum() / weights.sum()
-            showdown = float(np.dot(continuing, outcomes) / continuing.sum())
+            if plain:
+                continuing = [w * (.10 + .90 * min(1., max(0., (p - fold) / .25 + .5)))
+                              for w, p in zip(weights, percentile)]
+                kept = sum(continuing)
+                fold = 1 - kept / sum(weights)
+                showdown = sum(c * o for c, o in zip(continuing, outcomes)) / kept
+            else:
+                willingness = .10 + .90 * np.clip((percentile - fold) / .25 + .5, 0., 1.)
+                continuing = weights * willingness
+                fold = 1 - continuing.sum() / weights.sum()
+                showdown = float(np.dot(continuing, outcomes) / continuing.sum())
             ev = fold * pot + (1 - fold) * (realize * showdown * (pot + cost + reply) - cost)
             # A nonterminal bet can be raised by a more selective range.
             if target < req["max_raise"] and req["opp_stack"] > reply:

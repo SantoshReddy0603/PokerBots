@@ -1,2 +1,0 @@
-1 experiments/improved-teammate-match-1110/teammate.py W/D/L [4, 0, 4] chips/hand -0.309 seed bootstrap 95% [-1.828, 0.831] bank max 18.89 notices 0 forfeits 0
-2 experiments/improved-teammate-match-1110/teammate.py W/D/L [5, 0, 3] chips/hand 0.561 seed bootstrap 95% [-1.142, 2.264] bank max 51.42 notices 0 forfeits 0

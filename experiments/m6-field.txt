@@ -1,2 +1,0 @@
-swiss {'adaptive': 0.0, 'betting': 1.0, 'final_aggro': 0.0, 'final_equity': 0.0, 'final_shove': 0.0, 'final_station': 0.0, 'final_tag': 0.0}
-round_robin {'adaptive': 0.0, 'betting': 1.0, 'final_aggro': 0.0, 'final_equity': 0.0, 'final_shove': 0.0, 'final_station': 0.0, 'final_tag': 0.0}

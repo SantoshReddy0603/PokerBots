@@ -1,8 +1,0 @@
-1 experiments/daily-1110/friend-current.py W/D/L [0, 0, 4] chips/hand -1.618 seed bootstrap 95% [-2.178, -1.059] bank max 20.1 notices 0 forfeits 0
-1 experiments/review-fixes-1109/tight_reraise.py W/D/L [4, 0, 0] chips/hand 8.647 seed bootstrap 95% [6.404, 10.89] bank max 18.44 notices 0 forfeits 0
-1 opponents/league/confirmation/pressure.py W/D/L [4, 0, 0] chips/hand 8.16 seed bootstrap 95% [7.902, 8.418] bank max 18.87 notices 0 forfeits 0
-1 opponents/league/confirmation/trap.py W/D/L [4, 0, 0] chips/hand 2.681 seed bootstrap 95% [0.833, 4.53] bank max 22.17 notices 0 forfeits 0
-2 experiments/daily-1110/friend-current.py W/D/L [1, 0, 3] chips/hand -0.893 seed bootstrap 95% [-2.06, 0.275] bank max 56.17 notices 0 forfeits 0
-2 experiments/review-fixes-1109/tight_reraise.py W/D/L [4, 0, 0] chips/hand 7.482 seed bootstrap 95% [6.406, 8.559] bank max 54.19 notices 0 forfeits 0
-2 opponents/league/confirmation/pressure.py W/D/L [4, 0, 0] chips/hand 6.623 seed bootstrap 95% [5.372, 7.873] bank max 57.52 notices 0 forfeits 0
-2 opponents/league/confirmation/trap.py W/D/L [4, 0, 0] chips/hand 1.626 seed bootstrap 95% [1.395, 1.856] bank max 68.62 notices 0 forfeits 0

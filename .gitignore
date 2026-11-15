@@ -1,11 +1,6 @@
 __pycache__/
 *.pyc
-/experiments/friend-review/
 /experiments/*/repository/
-/experiments/daily-1110/friend-current.py
-/experiments/requested-field-test-1110/friend.py
-/experiments/teammate-match-1110/teammate.py
-/experiments/improved-teammate-match-1110/teammate.py
 /experiments/loss-improvement-1110/replays/
 /experiments/loss-improvement-1110/*-examples.json
 /experiments/*/*-s1/

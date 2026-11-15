@@ -1,6 +1,0 @@
-1 experiments/loss-improvement-1110/baseline.py W/D/L [0, 4, 0] chips/hand 0.0 seed bootstrap 95% [0.0, 0.0] bank max 17.89 notices 0 forfeits 0
-1 opponents/league/confirmation/pressure.py W/D/L [4, 0, 0] chips/hand 4.554 seed bootstrap 95% [3.487, 5.62] bank max 17.99 notices 0 forfeits 0
-1 opponents/league/confirmation/switch.py W/D/L [2, 0, 2] chips/hand 0.34 seed bootstrap 95% [-1.1, 1.78] bank max 20.44 notices 0 forfeits 0
-2 experiments/loss-improvement-1110/baseline.py W/D/L [0, 4, 0] chips/hand 0.0 seed bootstrap 95% [0.0, 0.0] bank max 52.6 notices 0 forfeits 0
-2 opponents/league/confirmation/pressure.py W/D/L [4, 0, 0] chips/hand 5.123 seed bootstrap 95% [4.112, 6.135] bank max 58.26 notices 0 forfeits 0
-2 opponents/league/confirmation/switch.py W/D/L [4, 0, 0] chips/hand 1.068 seed bootstrap 95% [0.055, 2.081] bank max 64.51 notices 0 forfeits 0

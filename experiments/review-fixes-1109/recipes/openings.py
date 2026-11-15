@@ -1,3 +1,0 @@
-FIX_BET_SIZES = False
-FIX_RERAISES = False
-FIX_OPENINGS = True

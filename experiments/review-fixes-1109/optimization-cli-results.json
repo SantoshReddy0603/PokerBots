@@ -1,7 +1,0 @@
-{
-  "default_command": "python tests/optimization.py",
-  "default_exit": 0,
-  "timing_command": "python tests/optimization.py --timing-out experiments/review-fixes-1109/optimization-timing.json",
-  "timing_exit": 0,
-  "posterior_cases": 60
-}

@@ -1,2 +1,0 @@
-1 experiments/daily-1110/friend-current.py W/D/L [2, 0, 0] chips/hand 1.079 seed bootstrap 95% [1.079, 1.079] bank max 18.07 notices 0 forfeits 0
-2 experiments/daily-1110/friend-current.py W/D/L [0, 0, 2] chips/hand -1.403 seed bootstrap 95% [-1.403, -1.403] bank max 53.96 notices 0 forfeits 0

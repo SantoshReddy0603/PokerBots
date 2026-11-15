@@ -1,2 +1,0 @@
-1 W/D/L [8, 0, 0] points per seed [1, 1, 1, 1] conditional 95% interval [1, 1] capped chips/hand 0.8141 max bank 24.81 failures 0 notices/diagnostic bytes 0 0
-2 W/D/L [8, 0, 0] points per seed [1, 1, 1, 1] conditional 95% interval [1, 1] capped chips/hand 0.9624 max bank 57.308 failures 0 notices/diagnostic bytes 0 0

@@ -1,2 +1,0 @@
-selective regression complete
-baseline regression complete

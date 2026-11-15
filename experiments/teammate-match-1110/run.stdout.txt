@@ -1,2 +1,0 @@
-1 experiments/teammate-match-1110/teammate.py W/D/L [4, 0, 4] chips/hand -0.22 seed bootstrap 95% [-2.729, 2.289] bank max 16.99 notices 0 forfeits 0
-2 experiments/teammate-match-1110/teammate.py W/D/L [2, 0, 6] chips/hand -0.784 seed bootstrap 95% [-1.712, 0.398] bank max 55.16 notices 0 forfeits 0
