@@ -2,7 +2,7 @@
 import runpy
 import sys
 
-bot = runpy.run_path(sys.argv[1] if len(sys.argv) > 1 else "dist/bot.py")
+bot = runpy.run_path(sys.argv[1] if len(sys.argv) > 1 else "bot.py")
 cards = bot["CARD_ID"]
 rank = bot["rank"]
 pick = bot["pick"]

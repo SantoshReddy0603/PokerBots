@@ -6,7 +6,7 @@ import sys
 sys.path.insert(0, str(Path("tests").resolve()))
 import protocol
 
-artifact = sys.argv[1] if len(sys.argv) > 1 else "dist/bot.py"
+artifact = sys.argv[1] if len(sys.argv) > 1 else "bot.py"
 protocol.ARTIFACT = artifact
 scope = runpy.run_path(artifact)
 for total, bank in ((200, 30000), (500, 75000)):
@@ -37,4 +37,4 @@ for total, bank in ((200, 30000), (500, 75000)):
                    board=["2s", "3c", "4d"], pot=400, my_stack=0, opp_stack=0, time_left_ms=100)
     reply = protocol.run([init, hand, discard])[0]
     assert reply["type"] == "discard" and reply["card"] in hand["hole_cards"]
-print("Selected release: both official leg lengths, fresh processes, no local lead lock, legal all-in actions/discards, and exit passed")
+print("bot.py: both official leg lengths, fresh processes, no local lead lock, legal all-in actions/discards, and exit passed")

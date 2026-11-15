@@ -3,7 +3,7 @@ import runpy
 import sys
 from random import Random
 
-b = runpy.run_path(sys.argv[1] if len(sys.argv) > 1 else "dist/bot.py")
+b = runpy.run_path(sys.argv[1] if len(sys.argv) > 1 else "bot.py")
 np = b["np"]
 assert np is not None
 rng = Random(97031)

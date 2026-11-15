@@ -7,7 +7,7 @@ import subprocess
 import sys
 import tempfile
 
-ARTIFACT = sys.argv[1] if len(sys.argv) > 1 else "dist/bot.py"
+ARTIFACT = sys.argv[1] if len(sys.argv) > 1 else "bot.py"
 
 def run(messages):
     with tempfile.TemporaryDirectory() as folder:

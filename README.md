@@ -1,115 +1,73 @@
-# PokerBots: Discard Hold'em bot
+# Discard Hold'em bot
 
-A self-contained Python 3.11 bot for the 2026 Discard Hold'em competition.
+Our entry for the 2026 PokerBots Discard Hold'em competition. The bot is the single
+file [`bot.py`](bot.py). It runs on Python 3.11 and needs nothing apart from NumPy,
+and it still plays correctly if NumPy is missing.
 
-**Submission file: [`dist/bot.py`](dist/bot.py)** (192 KB, a single file with no
-other files needed), built from `src/` by `tools/build_submission.py`.
+## How it plays
 
-- **Preflop:** precomputed three-card equity table, blended against heavy raises.
-- **Discard and postflop (NumPy):** vectorised hand evaluator, an opponent range
-  model updated from every action and showdown, discard search over sampled flops,
-  and a betting policy that weighs fold, call and raise sizes against that range.
-- **Match control:** frequency model of the opponent's actions and a protected-lead
-  lock that checks or folds once the remaining blinds cannot erase a winning lead.
-- **Without NumPy:** a list-based range-weighted estimate plays every decision.
+Each player gets three hole cards and throws one away after the flop, so most of the
+work goes into estimating what the opponent could hold.
 
-## How the list-based path plays
+**Preflop.** We look up the hand's equity in a precomputed table of three-card
+starting hands and compare it with opening and defending thresholds. Against big
+raises the table is mixed with a stronger range, because that is what people raise
+with.
 
-- **Preflop:** opening and defending thresholds use a precomputed three-card equity
-  table (`src/preflop_table.py`). Against heavy raises, the table blends a broad
-  range with a premium-heavy one.
-- **Opponent model:** each leg keeps counts of the opponent's public actions
-  (raise, bet, large bet, reraise, fold to small or large bets). These are used as
-  shrunk frequencies. Nothing is carried between legs or matches.
-- **Range-weighted equity:** after the flop, opponent holdings are sampled and
-  weighted by how likely each one is to have taken the observed actions. The model
-  also covers the opponent's own flop discard and the card they exposed. On the
-  river, every remaining opponent pair is enumerated exactly.
-- **Bet selection:** fold, check or call and three raise sizes are compared by
-  expected chips. Each raise uses an estimated fold rate and the equity against the
-  range that continues.
-- **Discard:** keeps the pair with the best range-weighted equity, with a small
-  bonus for playability.
-- **Without NumPy:** `src/pure_equity.py` runs the same range model on plain lists.
-  The number of samples adapts to the time bank, so a slow machine stays well inside
-  the limits.
+**Discard.** We try every pair we could keep, run each against sampled flops and
+the opponent's likely holdings, and keep the pair that does best.
 
-## Rules compliance
+**After the flop.** The opponent's range is updated after every action and every
+showdown, including the card they threw away. A vectorised hand evaluator scores
+our hand against that range. Fold, call and several raise sizes are then compared
+by expected chips, using how often each bet size is likely to get a fold.
 
-| Requirement | Status |
+**Opponent model.** During a leg we count what the opponent does (how often they
+raise, bet big, re-raise and fold to small or large bets) and adjust to it. Nothing
+carries over between legs, as the rules require.
+
+**Protecting a lead.** When we are ahead by more than the opponent can win back
+from the blinds left, the bot just checks and folds out the leg.
+
+**Without NumPy.** The same range model runs on plain Python lists, with fewer
+samples when the time bank is low.
+
+## Rules check
+
+| Rule | bot.py |
 |---|---|
-| Python 3.11, standard library plus NumPy/SciPy | Standard library only; NumPy optional |
-| Top-level `bot.py` or ZIP no larger than 5 MB | `dist/bot.py`, 192 KB |
-| No file writes, network, subprocesses or state between legs | None used; learned state resets at each `init` |
-| 5 s per response, 30 s / 75 s bank per leg, 1 CPU | With both bots sharing one core: slowest reply 221 ms, startup 0.9 s, bank about 9 s of 30 s and 27 s of 75 s per leg; slowest reply on a loaded machine 201 ms |
-| Protocol 1.0 JSON lines, two-leg matches | Full matches on the official engine with no forfeits or notices; `tests/` pass on `dist/bot.py` |
+| Python 3.11, standard library plus NumPy/SciPy | Standard library, NumPy optional |
+| Top-level `bot.py` or ZIP up to 5 MB | Single 192 KB file |
+| No file writes, network, subprocesses or state between legs | None; everything resets on `init` |
+| 5 s per reply, 30 s / 75 s bank per leg, 1 CPU, 1 GB | Slowest reply about 0.2 s, roughly a third of the bank used, about 50 MB of memory |
+| Protocol 1.0 JSON lines | Tested with both leg lengths on the official engine |
 
-The full rules summary is in [`RULES.md`](RULES.md).
+## Building and testing
 
-## Results
-
-All results below use the official two-leg engine
-(`vendor/Starter_Kit_2026_11_10/engine.py`) at production clocks, on fresh seeds
-with both seats played.
-
-**The submitted file** (`experiments/release-1115/`), paired with the previous
-release on the same seeds (45000-45003). Each cell is the submitted file first:
-
-| Opponent | Stage 1 | Stage 2 |
-|---|---|---|
-| strongest public range-model bot | 4/8 vs 4/8 | 8/8 vs 2/8 |
-| varun | 7/8 vs 8/8 | 8/8 vs 7/8 |
-| vinayreddy1008 Peak_06 | 8/8 vs 8/8 | 8/8 vs 8/8 |
-
-Total: 43 of 48 against 37 of 48 (Stage 2 +29.2 points, 95% interval +20.8 to
-+33.3). Head to head against the previous release it won 27 of 64. On seeds
-48000-48001 it won 32 of 32 against agri, amogh, nitish and SantoshReddy0603. No
-match had a forfeit or protocol notice from our bot.
-
-**How decisions were assigned:** preflop, discard, turn and river were each tested
-with the table and with the range model. The table helped only preflop. Seven
-settings changes to the range model (sizes, sample counts, exact turn equity) did
-not beat the current one.
-
-**Earlier testing of the list-based path:** it won 77% of 3,202 matches against public
-GitHub bots: nitish 100%, agri 95%, amogh 92%, the range-model bot 56% and varun 50%. It won
-all 684 matches against 19 synthetic exploit styles.
-
-These are finite local samples, and the results against other entrants may differ.
-
-## Build and test
+`bot.py` is generated from the modules in `src/`:
 
 ```bash
-python3.11 tools/build_submission.py                 # dist/bot.py
-python3.11 tests/protocol.py                         # wire protocol fixtures
-python3.11 tests/leg_compatibility.py                # both official leg lengths
-python3.11 tests/learning.py dist/bot.py             # evaluator and model invariants
-python3.11 tests/selection.py dist/bot.py            # rank and discard cases
-python3.11 tests/evaluator.py dist/bot.py            # hand evaluator oracle
-python3.11 -S tests/protocol.py                      # same fixtures without site-packages
+python3.11 tools/build_submission.py      # writes bot.py
+python3.11 tests/protocol.py              # message protocol
+python3.11 tests/leg_compatibility.py     # 200 and 500 hand legs
+python3.11 tests/learning.py              # evaluator and opponent model
+python3.11 tests/selection.py             # hand ranking and discards
+python3.11 -S tests/protocol.py           # same checks without NumPy
 ```
 
-[`dist/release.json`](dist/release.json) records the SHA-256 of the submission and
-of every source. The previous release is kept exactly as
-`checkpoints/pre-release-1115.py`. To play a single match, use
-`tools/benchmark_legs.py`.
+## Files
 
-## Repository layout
-
-| Path | Contents |
+| Path | What it is |
 |---|---|
-| `dist/` | Submission file and release manifest |
-| `src/` | Bot sources, concatenated by `tools/build_submission.py` |
-| `tests/` | Protocol, evaluator, model and decision tests |
-| `tools/` | Build, match runner, evaluation and comparison tools |
-| `opponents/` | Synthetic opponents used for testing |
-| `checkpoints/` | The previous submission, kept exactly (`pre-release-1115.py`) |
-| `experiments/` | Compact match evidence for each promotion |
-| `vendor/`, `pokerbots_1/` | Organizer engine and starter kit, unchanged |
-
-Source files in build order: `learning_protocol.py` (match state),
-`poker.py` (evaluator and helpers), `preflop_key.py` and `preflop_table.py`,
-`event_ranges.py` (event replay and the fallback model), `learning.py`
-(frequency model), `selective_equity.py` and `pure_equity.py` (range estimates),
-`learning_policy.py` (list-based decisions), `range_engine.py` (vectorised
-postflop) and `main_loop.py` (message loop).
+| `bot.py` | The submission |
+| `src/learning_protocol.py` | Match state and the lead check |
+| `src/poker.py` | Hand evaluator and card helpers |
+| `src/preflop_key.py`, `src/preflop_table.py` | Preflop equity table |
+| `src/event_ranges.py` | Replays hand events into an opponent range |
+| `src/learning.py` | Opponent action counts |
+| `src/selective_equity.py`, `src/pure_equity.py` | Range equity without NumPy |
+| `src/learning_policy.py` | Betting and discard decisions without NumPy |
+| `src/range_engine.py` | NumPy evaluator, range model, discard search and betting |
+| `src/main_loop.py` | Reads the engine's messages and replies |
+| `tools/build_submission.py` | Builds `bot.py` from `src/` |
+| `tests/` | Protocol and decision tests |
